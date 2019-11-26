@@ -342,8 +342,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 6900 5150 50
 	1    7150 4900
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 5000 7700 5000
 $Comp
 L power:GND #PWR0103
 U 1 1 5DE1D470
@@ -430,8 +428,6 @@ Wire Wire Line
 	6650 4800 6650 5300
 Wire Wire Line
 	7450 5300 7650 5300
-Wire Wire Line
-	7650 5300 7650 4800
 Connection ~ 7650 4800
 Wire Wire Line
 	7650 4800 7900 4800
@@ -467,4 +463,16 @@ Wire Wire Line
 Connection ~ 7900 4800
 Wire Wire Line
 	7900 4800 8000 4800
+Wire Wire Line
+	7650 5300 7650 4800
+Wire Wire Line
+	7550 5000 7700 5000
+Wire Wire Line
+	8000 5000 8000 5200
+Wire Wire Line
+	8000 5200 7700 5200
+Wire Wire Line
+	7700 5200 7700 5000
+Connection ~ 8000 5000
+Connection ~ 7700 5000
 $EndSCHEMATC

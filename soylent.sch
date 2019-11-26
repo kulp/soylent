@@ -50,12 +50,12 @@ $EndComp
 $Comp
 L Connector:DB9_Female J1
 U 1 1 5DDD001B
-P 9000 3800
-F 0 "J1" H 9180 3846 50  0000 L CNN
-F 1 "DB9_Female" H 9180 3755 50  0000 L CNN
-F 2 "Conectors-Dsub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 9000 3800 50  0001 C CNN
-F 3 " ~" H 9000 3800 50  0001 C CNN
-	1    9000 3800
+P 9200 3800
+F 0 "J1" H 9380 3846 50  0000 L CNN
+F 1 "DB9_Female" H 9380 3755 50  0000 L CNN
+F 2 "Conectors-Dsub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 9200 3800 50  0001 C CNN
+F 3 " ~" H 9200 3800 50  0001 C CNN
+	1    9200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -69,31 +69,23 @@ F 3 "~" H 7800 3800 50  0001 C CNN
 	1    7800 3800
 	0    1    1    0   
 $EndComp
-Text Label 8450 3600 0    50   ~ 0
+Text Label 8650 3600 0    50   ~ 0
 TD
-Text Label 8450 3800 0    50   ~ 0
+Text Label 8650 3800 0    50   ~ 0
 RD
-Text Label 8450 3700 0    50   ~ 0
+Text Label 8650 3700 0    50   ~ 0
 RTS
-Text Label 8450 4000 0    50   ~ 0
+Text Label 8650 4000 0    50   ~ 0
 DTR
 Wire Wire Line
 	7650 3500 7650 3600
-Wire Wire Line
-	8150 4000 8700 4000
-Wire Wire Line
-	7650 3600 8700 3600
 Connection ~ 7650 3600
 Wire Wire Line
 	7650 3600 7650 3800
-Wire Wire Line
-	8700 4200 8350 4200
-Text Label 8450 4200 0    50   ~ 0
-GND
-NoConn ~ 8700 4100
-NoConn ~ 8700 3400
-NoConn ~ 8700 3500
-NoConn ~ 8700 3900
+NoConn ~ 8900 4100
+NoConn ~ 8900 3400
+NoConn ~ 8900 3500
+NoConn ~ 8900 3900
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5DDC8FE2
@@ -237,28 +229,10 @@ Wire Wire Line
 Wire Wire Line
 	6550 3600 6950 3600
 Connection ~ 4750 4000
-$Comp
-L power:GND #PWR0106
-U 1 1 5DE0A274
-P 8350 4350
-F 0 "#PWR0106" H 8350 4100 50  0001 C CNN
-F 1 "GND" H 8355 4177 50  0000 C CNN
-F 2 "" H 8350 4350 50  0001 C CNN
-F 3 "" H 8350 4350 50  0001 C CNN
-	1    8350 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 4200 8350 4350
 Wire Wire Line
 	7950 3800 8050 3800
 Wire Wire Line
-	8300 3700 8700 3700
-Wire Wire Line
 	8050 3400 8050 3800
-Connection ~ 8050 3800
-Wire Wire Line
-	8050 3800 8700 3800
 Connection ~ 6950 3600
 Wire Wire Line
 	6250 3900 6250 3200
@@ -323,4 +297,174 @@ Wire Notes Line
 	4400 4850 4400 2400
 Text Notes 4450 2400 0    50   ~ 0
 Breakout
+$Comp
+L power:GND #PWR0106
+U 1 1 5DE0A274
+P 8600 4350
+F 0 "#PWR0106" H 8600 4100 50  0001 C CNN
+F 1 "GND" H 8605 4177 50  0000 C CNN
+F 2 "" H 8600 4350 50  0001 C CNN
+F 3 "" H 8600 4350 50  0001 C CNN
+	1    8600 4350
+	1    0    0    -1  
+$EndComp
+Text Label 8650 4200 0    50   ~ 0
+GND
+Wire Wire Line
+	8900 4200 8600 4200
+Wire Wire Line
+	8600 4200 8600 4350
+Wire Wire Line
+	7650 3600 8900 3600
+Wire Wire Line
+	8050 3800 8900 3800
+Connection ~ 8050 3800
+Wire Wire Line
+	8500 4000 8500 4400
+Wire Wire Line
+	8500 4400 8050 4400
+Wire Wire Line
+	8500 4000 8900 4000
+Wire Wire Line
+	8350 3700 8350 4300
+Wire Wire Line
+	8350 4300 7900 4300
+Wire Wire Line
+	8350 3700 8900 3700
+$Comp
+L Regulator_Linear:MIC5504-3.3YM5 U?
+U 1 1 5DE19C60
+P 7150 4900
+F 0 "U?" H 7150 5267 50  0000 C CNN
+F 1 "MIC5504-3.3YM5" H 7150 5176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7150 4500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 6900 5150 50  0001 C CNN
+	1    7150 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5000 7700 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5DE1D470
+P 7150 5400
+F 0 "#PWR?" H 7150 5150 50  0001 C CNN
+F 1 "GND" H 7155 5227 50  0000 C CNN
+F 2 "" H 7150 5400 50  0001 C CNN
+F 3 "" H 7150 5400 50  0001 C CNN
+	1    7150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5DE1E17C
+P 6500 4800
+F 0 "JP?" H 6500 4913 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6500 4914 50  0001 C CNN
+F 2 "" H 6500 4800 50  0001 C CNN
+F 3 "~" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DE1EC76
+P 6250 4800
+F 0 "#PWR?" H 6250 4650 50  0001 C CNN
+F 1 "VDD" H 6267 4973 50  0000 C CNN
+F 2 "" H 6250 4800 50  0001 C CNN
+F 3 "" H 6250 4800 50  0001 C CNN
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5DE20E78
+P 7850 5000
+F 0 "JP?" H 7850 5113 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 7850 5114 50  0001 C CNN
+F 2 "" H 7850 5000 50  0001 C CNN
+F 3 "~" H 7850 5000 50  0001 C CNN
+	1    7850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5000 8000 4800
+Wire Wire Line
+	7550 4800 7650 4800
+Wire Wire Line
+	7150 5200 7150 5300
+$Comp
+L Device:C C?
+U 1 1 5DE23CE2
+P 7300 5300
+F 0 "C?" V 7048 5300 50  0000 C CNN
+F 1 "1u" V 7139 5300 50  0000 C CNN
+F 2 "" H 7338 5150 50  0001 C CNN
+F 3 "~" H 7300 5300 50  0001 C CNN
+	1    7300 5300
+	0    1    1    0   
+$EndComp
+Connection ~ 7150 5300
+Wire Wire Line
+	7150 5300 7150 5400
+$Comp
+L Device:C C?
+U 1 1 5DE245AB
+P 7000 5300
+F 0 "C?" V 6748 5300 50  0000 C CNN
+F 1 "1u" V 6839 5300 50  0000 C CNN
+F 2 "" H 7038 5150 50  0001 C CNN
+F 3 "~" H 7000 5300 50  0001 C CNN
+	1    7000 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 4800 6350 4800
+Wire Wire Line
+	6650 4800 6750 4800
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 5300 6850 5300
+Wire Wire Line
+	6650 4800 6650 5300
+Wire Wire Line
+	7450 5300 7650 5300
+Wire Wire Line
+	7650 5300 7650 4800
+Connection ~ 7650 4800
+Wire Wire Line
+	7650 4800 7900 4800
+$Comp
+L Device:D D?
+U 1 1 5DE2B802
+P 7900 4450
+F 0 "D?" V 7946 4528 50  0000 L CNN
+F 1 "D" V 7855 4528 50  0000 L CNN
+F 2 "" H 7900 4450 50  0001 C CNN
+F 3 "~" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5DE2CA20
+P 8050 4550
+F 0 "D?" V 8096 4471 50  0000 R CNN
+F 1 "D" V 8005 4471 50  0000 R CNN
+F 2 "" H 8050 4550 50  0001 C CNN
+F 3 "~" H 8050 4550 50  0001 C CNN
+	1    8050 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 4700 8050 4800
+Wire Wire Line
+	8050 4800 8000 4800
+Connection ~ 8000 4800
+Wire Wire Line
+	7900 4600 7900 4800
+Connection ~ 7900 4800
+Wire Wire Line
+	7900 4800 8000 4800
 $EndSCHEMATC

@@ -313,4 +313,14 @@ Wire Wire Line
 	7550 3800 7550 3600
 Wire Wire Line
 	7550 3600 7650 3600
+Wire Notes Line
+	4400 2400 5050 2400
+Wire Notes Line
+	5050 2400 5050 4850
+Wire Notes Line
+	5050 4850 4400 4850
+Wire Notes Line
+	4400 4850 4400 2400
+Text Notes 4450 2400 0    50   ~ 0
+Breakout
 $EndSCHEMATC

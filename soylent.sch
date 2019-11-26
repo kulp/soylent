@@ -82,10 +82,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 4000 8700 4000
 Wire Wire Line
-	7950 3800 8000 3800
-Wire Wire Line
-	8000 3700 8700 3700
-Wire Wire Line
 	7650 3600 8700 3600
 Connection ~ 7650 3600
 Wire Wire Line
@@ -190,13 +186,13 @@ $EndComp
 $Comp
 L Transistor_BJT:BC847BPN Q1
 U 2 1 5DDF77D1
-P 7900 4300
-F 0 "Q1" H 8091 4346 50  0000 L CNN
-F 1 "BC847BPN" H 8091 4255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8100 4400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 7900 4300 50  0001 C CNN
-	2    7900 4300
-	1    0    0    -1  
+P 7950 3200
+F 0 "Q1" H 8141 3246 50  0000 L CNN
+F 1 "BC847BPN" H 8141 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8150 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 7950 3200 50  0001 C CNN
+	2    7950 3200
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7650 3600 7400 3600
@@ -207,29 +203,14 @@ Wire Wire Line
 $Comp
 L Device:R R2
 U 1 1 5DDFC6FD
-P 6950 3250
-F 0 "R2" V 7065 3250 50  0000 C CNN
-F 1 "4k7" V 7156 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6880 3250 50  0001 C CNN
-F 3 "~" H 6950 3250 50  0001 C CNN
-	1    6950 3250
-	-1   0    0    1   
+P 7400 2900
+F 0 "R2" V 7515 2900 50  0000 C CNN
+F 1 "4k7" V 7606 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7330 2900 50  0001 C CNN
+F 3 "~" H 7400 2900 50  0001 C CNN
+	1    7400 2900
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6950 3400 6950 3600
-$Comp
-L power:VDD #PWR0103
-U 1 1 5DDFD717
-P 6950 3000
-F 0 "#PWR0103" H 6950 2850 50  0001 C CNN
-F 1 "VDD" H 6967 3173 50  0000 C CNN
-F 2 "" H 6950 3000 50  0001 C CNN
-F 3 "" H 6950 3000 50  0001 C CNN
-	1    6950 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 3000 6950 3100
 $Comp
 L power:GND #PWR0104
 U 1 1 5DDFED5A
@@ -244,27 +225,16 @@ $EndComp
 $Comp
 L power:VDD #PWR0105
 U 1 1 5DDFF54C
-P 8000 4550
-F 0 "#PWR0105" H 8000 4400 50  0001 C CNN
-F 1 "VDD" H 8018 4723 50  0000 C CNN
-F 2 "" H 8000 4550 50  0001 C CNN
-F 3 "" H 8000 4550 50  0001 C CNN
-	1    8000 4550
-	-1   0    0    1   
+P 8050 2700
+F 0 "#PWR0105" H 8050 2550 50  0001 C CNN
+F 1 "VDD" H 8068 2873 50  0000 C CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 4550 8000 4500
-Wire Wire Line
-	8000 4100 8000 3800
-Connection ~ 8000 3800
-Wire Wire Line
-	8000 3800 8700 3800
-Wire Wire Line
 	4650 3900 6250 3900
-Wire Wire Line
-	6250 3900 6250 4300
-Wire Wire Line
-	6250 4300 7700 4300
 Connection ~ 4650 3900
 Wire Wire Line
 	4750 4000 6550 4000
@@ -273,7 +243,6 @@ Wire Wire Line
 Wire Wire Line
 	6550 3600 6950 3600
 Connection ~ 4750 4000
-Connection ~ 6950 3600
 $Comp
 L power:GND #PWR0106
 U 1 1 5DE0A274
@@ -287,4 +256,39 @@ F 3 "" H 8350 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 4200 8350 4350
+Wire Wire Line
+	7950 3800 8050 3800
+Wire Wire Line
+	8300 3700 8700 3700
+Wire Wire Line
+	8050 3400 8050 3800
+Connection ~ 8050 3800
+Wire Wire Line
+	8050 3800 8700 3800
+Connection ~ 6950 3600
+Wire Wire Line
+	6250 3900 6250 3200
+Wire Wire Line
+	6250 3200 7750 3200
+Wire Wire Line
+	6950 2900 7250 2900
+Wire Wire Line
+	6950 2900 6950 3600
+Wire Wire Line
+	7550 2900 8050 2900
+Wire Wire Line
+	8050 2900 8050 2700
+Wire Wire Line
+	8050 3000 8050 2900
+Connection ~ 8050 2900
+Wire Notes Line
+	6800 4250 8250 4250
+Wire Notes Line
+	8250 4250 8250 2400
+Wire Notes Line
+	8250 2400 6800 2400
+Wire Notes Line
+	6800 4250 6800 2400
+Text Notes 6850 2400 0    50   ~ 0
+RS-232 level conversion
 $EndSCHEMATC

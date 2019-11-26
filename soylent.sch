@@ -194,12 +194,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 7950 3200 
 	2    7950 3200
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7650 3600 7400 3600
-Wire Wire Line
-	7400 3600 7400 3800
-Wire Wire Line
-	7400 3800 7250 3800
 $Comp
 L Device:R R2
 U 1 1 5DDFC6FD
@@ -269,8 +263,6 @@ Connection ~ 6950 3600
 Wire Wire Line
 	6250 3900 6250 3200
 Wire Wire Line
-	6250 3200 7750 3200
-Wire Wire Line
 	6950 2900 7250 2900
 Wire Wire Line
 	6950 2900 6950 3600
@@ -291,4 +283,34 @@ Wire Notes Line
 	6800 4250 6800 2400
 Text Notes 6850 2400 0    50   ~ 0
 RS-232 level conversion
+$Comp
+L Device:R R?
+U 1 1 5DDEECC2
+P 7450 3200
+F 0 "R?" V 7243 3200 50  0000 C CNN
+F 1 "10k" V 7334 3200 50  0000 C CNN
+F 2 "" V 7380 3200 50  0001 C CNN
+F 3 "~" H 7450 3200 50  0001 C CNN
+	1    7450 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3200 7600 3200
+Wire Wire Line
+	6250 3200 7300 3200
+$Comp
+L Device:R R?
+U 1 1 5DDF3326
+P 7400 3800
+F 0 "R?" V 7193 3800 50  0000 C CNN
+F 1 "10k" V 7284 3800 50  0000 C CNN
+F 2 "" V 7330 3800 50  0001 C CNN
+F 3 "~" H 7400 3800 50  0001 C CNN
+	1    7400 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3800 7550 3600
+Wire Wire Line
+	7550 3600 7650 3600
 $EndSCHEMATC

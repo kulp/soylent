@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 2)
     (tracks 116)
     (zones 0)
     (modules 17)
@@ -812,6 +812,13 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+  )
+
+  (gr_text Vdd (at 254.6096 39.1668 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.25)))
+  )
+  (gr_text GND (at 223.8756 39.2176 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.25)))
   )
 
   (via (at 234.5944 34.7726) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))

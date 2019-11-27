@@ -432,15 +432,15 @@ Connection ~ 7950 4800
 Wire Wire Line
 	7950 4800 8050 4800
 Text Label 3500 3600 0    50   ~ 0
-PA1
+WIN
 Text Label 3500 3700 0    50   ~ 0
-PA2
+WOUT
 Text Label 3500 3800 0    50   ~ 0
 PA3
 Text Label 3500 3900 0    50   ~ 0
-PA6
+TX
 Text Label 3500 4000 0    50   ~ 0
-PA7
+RX
 Wire Notes Line
 	8250 5750 6150 5750
 Wire Notes Line

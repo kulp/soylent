@@ -80,8 +80,6 @@ DTR
 Wire Wire Line
 	7650 3500 7650 3600
 Connection ~ 7650 3600
-Wire Wire Line
-	7650 3600 7650 3800
 NoConn ~ 8900 4100
 NoConn ~ 8900 3400
 NoConn ~ 8900 3500
@@ -376,7 +374,7 @@ U 1 1 5DE245AB
 P 7000 5400
 F 0 "C1" V 6748 5400 50  0000 C CNN
 F 1 "1u" V 6839 5400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 5250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7038 5250 50  0001 C CNN
 F 3 "~" H 7000 5400 50  0001 C CNN
 	1    7000 5400
 	0    1    1    0   
@@ -522,7 +520,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 3800 6350 3500
 Wire Wire Line
-	6350 3500 7650 3500
+	6350 3500 7100 3500
 Connection ~ 3900 3500
 $Comp
 L power:VDD #PWR0109
@@ -669,4 +667,19 @@ Wire Wire Line
 Wire Wire Line
 	6050 3100 6050 2900
 Connection ~ 5950 3100
+Wire Wire Line
+	7500 3500 7650 3500
+$Comp
+L Jumper:Jumper_2_Bridged JP3
+U 1 1 5E09C5A1
+P 7300 3500
+F 0 "JP3" H 7300 3695 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 7300 3604 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7300 3500 50  0001 C CNN
+F 3 "~" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3600 7650 3800
 $EndSCHEMATC

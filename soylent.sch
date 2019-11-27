@@ -484,10 +484,10 @@ F 3 "" H 6550 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5DEFDFE7
 P 5700 2800
-F 0 "R?" V 5493 2800 50  0000 C CNN
+F 0 "R7" V 5493 2800 50  0000 C CNN
 F 1 "4k7" V 5584 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 2800 50  0001 C CNN
 F 3 "~" H 5700 2800 50  0001 C CNN
@@ -495,10 +495,10 @@ F 3 "~" H 5700 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BC847BPN Q?
+L Transistor_BJT:BC847BPN Q2
 U 2 1 5DF05573
 P 5150 3200
-F 0 "Q?" H 5341 3154 50  0000 L CNN
+F 0 "Q2" H 5341 3154 50  0000 L CNN
 F 1 "BC847BPN" H 5341 3245 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 3300 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 3200 50  0001 C CNN
@@ -506,10 +506,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 3200 
 	-1   0    0    1   
 $EndComp
 $Comp
-L Transistor_BJT:BC847BPN Q?
+L Transistor_BJT:BC847BPN Q2
 U 1 1 5DF18897
 P 5150 2800
-F 0 "Q?" H 5341 2846 50  0000 L CNN
+F 0 "Q2" H 5341 2846 50  0000 L CNN
 F 1 "BC847BPN" H 5341 2755 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 2900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2800 50  0001 C CNN
@@ -536,10 +536,10 @@ Wire Wire Line
 	6350 3500 7650 3500
 Connection ~ 3900 3500
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0109
 U 1 1 5DF48DE3
 P 5050 2600
-F 0 "#PWR?" H 5050 2450 50  0001 C CNN
+F 0 "#PWR0109" H 5050 2450 50  0001 C CNN
 F 1 "VDD" H 5068 2773 50  0000 C CNN
 F 2 "" H 5050 2600 50  0001 C CNN
 F 3 "" H 5050 2600 50  0001 C CNN
@@ -547,10 +547,10 @@ F 3 "" H 5050 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 5DF492BB
 P 5050 3400
-F 0 "#PWR?" H 5050 3150 50  0001 C CNN
+F 0 "#PWR0110" H 5050 3150 50  0001 C CNN
 F 1 "GND" H 5055 3227 50  0000 C CNN
 F 2 "" H 5050 3400 50  0001 C CNN
 F 3 "" H 5050 3400 50  0001 C CNN
@@ -568,10 +568,10 @@ Connection ~ 5350 2800
 Wire Wire Line
 	5850 2800 6050 2800
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5DF5183F
 P 4600 2850
-F 0 "R?" H 4670 2804 50  0000 L CNN
+F 0 "R5" H 4670 2804 50  0000 L CNN
 F 1 "10k" H 4670 2895 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 2850 50  0001 C CNN
 F 3 "~" H 4600 2850 50  0001 C CNN
@@ -579,10 +579,10 @@ F 3 "~" H 4600 2850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5DF52A36
 P 4600 3150
-F 0 "R?" H 4670 3104 50  0000 L CNN
+F 0 "R6" H 4670 3104 50  0000 L CNN
 F 1 "10k" H 4670 3195 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 3150 50  0001 C CNN
 F 3 "~" H 4600 3150 50  0001 C CNN
@@ -612,4 +612,11 @@ Wire Notes Line
 	6800 4250 8250 4250
 Wire Notes Line
 	8250 4250 8250 2400
+Wire Wire Line
+	4000 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 3000
+Wire Wire Line
+	4400 3000 4600 3000
+Connection ~ 4000 3700
 $EndSCHEMATC

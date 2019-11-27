@@ -151,17 +151,6 @@ Wire Wire Line
 Text Label 3500 3500 0    50   ~ 0
 UPDI
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J4
-U 1 1 5DDE85A2
-P 6250 2800
-F 0 "J4" H 6300 3025 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" V 6345 2980 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6250 2800 50  0001 C CNN
-F 3 "~" H 6250 2800 50  0001 C CNN
-	1    6250 2800
-	1    0    0    1   
-$EndComp
-$Comp
 L Transistor_BJT:BC847BPN Q1
 U 1 1 5DDF4A3F
 P 7050 3800
@@ -613,14 +602,29 @@ Wire Notes Line
 Wire Notes Line
 	8250 4250 8250 2400
 Wire Wire Line
-	4000 3700 4400 3700
-Wire Wire Line
-	4400 3700 4400 3000
-Wire Wire Line
 	4400 3000 4600 3000
-Connection ~ 4000 3700
-NoConn ~ 6050 2900
 NoConn ~ 6050 2700
 NoConn ~ 6550 2700
 NoConn ~ 6550 2800
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J4
+U 1 1 5DDE85A2
+P 6250 2800
+F 0 "J4" H 6300 3025 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" V 6345 2980 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6250 2800 50  0001 C CNN
+F 3 "~" H 6250 2800 50  0001 C CNN
+	1    6250 2800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3600 4400 3600
+Connection ~ 3950 3600
+Wire Wire Line
+	4400 3600 4400 3000
+Wire Wire Line
+	4000 3700 6050 3700
+Wire Wire Line
+	6050 2900 6050 3700
+Connection ~ 4000 3700
 $EndSCHEMATC

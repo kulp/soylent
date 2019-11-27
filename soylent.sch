@@ -248,10 +248,6 @@ Wire Wire Line
 	8050 3000 8050 2900
 Connection ~ 8050 2900
 Wire Notes Line
-	6800 4250 8250 4250
-Wire Notes Line
-	8250 4250 8250 2400
-Wire Notes Line
 	8250 2400 6800 2400
 Wire Notes Line
 	6800 4250 6800 2400
@@ -475,4 +471,14 @@ Text Label 4400 3900 0    50   ~ 0
 PA6
 Text Label 4400 4000 0    50   ~ 0
 PA7
+Wire Notes Line
+	8250 5650 6150 5650
+Wire Notes Line
+	6150 5650 6150 4250
+Wire Notes Line
+	6150 4250 8250 4250
+Wire Notes Line
+	8250 2400 8250 5650
+Text Notes 6200 4250 0    50   ~ 0
+Parasitic power
 $EndSCHEMATC

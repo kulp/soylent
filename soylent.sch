@@ -465,4 +465,14 @@ Wire Wire Line
 Connection ~ 7950 4700
 Wire Wire Line
 	7950 4700 8050 4700
+Text Label 4400 3600 0    50   ~ 0
+PA1
+Text Label 4400 3700 0    50   ~ 0
+PA2
+Text Label 4400 3800 0    50   ~ 0
+PA3
+Text Label 4400 3900 0    50   ~ 0
+PA6
+Text Label 4400 4000 0    50   ~ 0
+PA7
 $EndSCHEMATC

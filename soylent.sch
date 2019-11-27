@@ -153,13 +153,13 @@ UPDI
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J4
 U 1 1 5DDE85A2
-P 5900 2850
-F 0 "J4" V 5904 3030 50  0000 L CNN
-F 1 "Conn_02x03_Counter_Clockwise" V 5995 3030 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 5900 2850 50  0001 C CNN
-F 3 "~" H 5900 2850 50  0001 C CNN
-	1    5900 2850
-	0    1    1    0   
+P 6200 2700
+F 0 "J4" H 6250 2925 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" V 6295 2880 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6200 2700 50  0001 C CNN
+F 3 "~" H 6200 2700 50  0001 C CNN
+	1    6200 2700
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7650 3500 4800 3500
@@ -190,8 +190,8 @@ $Comp
 L Device:R R2
 U 1 1 5DDFC6FD
 P 7400 2900
-F 0 "R2" V 7515 2900 50  0000 C CNN
-F 1 "4k7" V 7606 2900 50  0000 C CNN
+F 0 "R2" V 7607 2900 50  0000 C CNN
+F 1 "4k7" V 7516 2900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 7330 2900 50  0001 C CNN
 F 3 "~" H 7400 2900 50  0001 C CNN
 	1    7400 2900
@@ -219,8 +219,6 @@ F 3 "" H 8050 2700 50  0001 C CNN
 	1    8050 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 3900 6250 3900
 Connection ~ 4650 3900
 Wire Wire Line
 	4750 4000 6550 4000
@@ -234,8 +232,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 3400 8050 3800
 Connection ~ 6950 3600
-Wire Wire Line
-	6250 3900 6250 3200
 Wire Wire Line
 	6950 2900 7250 2900
 Wire Wire Line
@@ -256,18 +252,14 @@ RS-232 level conversion
 $Comp
 L Device:R R4
 U 1 1 5DDEECC2
-P 7450 3200
-F 0 "R4" V 7243 3200 50  0000 C CNN
-F 1 "10k" V 7334 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 3200 50  0001 C CNN
-F 3 "~" H 7450 3200 50  0001 C CNN
-	1    7450 3200
+P 7400 3200
+F 0 "R4" V 7193 3200 50  0000 C CNN
+F 1 "10k" V 7284 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7330 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7750 3200 7600 3200
-Wire Wire Line
-	6250 3200 7300 3200
 $Comp
 L Device:R R3
 U 1 1 5DDF3326
@@ -481,4 +473,22 @@ Wire Notes Line
 	8250 2400 8250 5650
 Text Notes 6200 4250 0    50   ~ 0
 Parasitic power
+Wire Notes Line
+	5150 2400 6700 2400
+Wire Notes Line
+	6700 2400 6700 4100
+Wire Notes Line
+	6700 4100 5150 4100
+Wire Notes Line
+	5150 4100 5150 2400
+Wire Wire Line
+	6450 3900 6450 3200
+Wire Wire Line
+	6450 3200 7250 3200
+Wire Wire Line
+	4650 3900 6450 3900
+Wire Wire Line
+	7550 3200 7750 3200
+Text Notes 5200 2400 0    50   ~ 0
+TTY interface
 $EndSCHEMATC

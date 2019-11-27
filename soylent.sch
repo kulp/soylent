@@ -374,7 +374,7 @@ U 1 1 5DE245AB
 P 7000 5400
 F 0 "C1" V 6748 5400 50  0000 C CNN
 F 1 "1u" V 6839 5400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7038 5250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 5250 50  0001 C CNN
 F 3 "~" H 7000 5400 50  0001 C CNN
 	1    7000 5400
 	0    1    1    0   
@@ -685,10 +685,10 @@ F 3 "~" H 5650 2200 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Transistor_BJT:BC847BPN Q?
+L Transistor_BJT:BC847BPN Q3
 U 2 1 5E1133DF
 P 5850 2500
-F 0 "Q?" H 6041 2454 50  0000 L CNN
+F 0 "Q3" H 6041 2454 50  0000 L CNN
 F 1 "BC847BPN" H 6041 2545 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 6050 2600 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5850 2500 50  0001 C CNN
@@ -705,10 +705,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 2700 6100 2600
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5E15CC34
 P 6100 2450
-F 0 "R?" V 5893 2450 50  0000 C CNN
+F 0 "R9" V 5893 2450 50  0000 C CNN
 F 1 "100R" V 5984 2450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6030 2450 50  0001 C CNN
 F 3 "~" H 6100 2450 50  0001 C CNN

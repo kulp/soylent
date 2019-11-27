@@ -724,7 +724,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5DDCBE55)
+  (module Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm locked (layer F.Cu) (tedit 59650532) (tstamp 5DDCBE55)
     (at 236.6922 25.2476 90)
     (descr "Through hole straight pin header, 2x03, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x03 2.54mm double row")
@@ -843,7 +843,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5DDC8018)
+  (module Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm locked (layer F.Cu) (tedit 59650532) (tstamp 5DDC8018)
     (at 226.1108 31.6076)
     (descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x04 2.54mm single row")
@@ -887,7 +887,7 @@
     )
   )
 
-  (module SMD_Packages:SOIC-8-N (layer F.Cu) (tedit 0) (tstamp 5DDCB0D0)
+  (module SMD_Packages:SOIC-8-N locked (layer F.Cu) (tedit 0) (tstamp 5DDCB0D0)
     (at 239.2172 35.4076 90)
     (descr "Module Narrow CMS SOJ 8 pins large")
     (tags "CMS SOJ")
@@ -929,7 +929,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5DDC75BF)
+  (module Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm locked (layer F.Cu) (tedit 59650532) (tstamp 5DDC75BF)
     (at 252.3236 39.2076 180)
     (descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x04 2.54mm single row")

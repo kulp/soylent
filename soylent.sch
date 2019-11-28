@@ -473,23 +473,23 @@ $EndComp
 $Comp
 L Transistor_BJT:BC847BPN Q2
 U 2 1 5DF05573
-P 5150 2600
-F 0 "Q2" H 5341 2554 50  0000 L CNN
-F 1 "BC847BPN" H 5341 2645 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 2700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2600 50  0001 C CNN
-	2    5150 2600
+P 5150 2200
+F 0 "Q2" H 5341 2154 50  0000 L CNN
+F 1 "BC847BPN" H 5341 2245 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 2300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2200 50  0001 C CNN
+	2    5150 2200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Transistor_BJT:BC847BPN Q2
 U 1 1 5DF18897
-P 5150 2200
-F 0 "Q2" H 5341 2246 50  0000 L CNN
-F 1 "BC847BPN" H 5341 2155 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 2300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2200 50  0001 C CNN
-	1    5150 2200
+P 5150 2600
+F 0 "Q2" H 5341 2646 50  0000 L CNN
+F 1 "BC847BPN" H 5341 2555 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 5350 2700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2600 50  0001 C CNN
+	1    5150 2600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line

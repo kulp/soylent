@@ -58,17 +58,6 @@ F 3 " ~" H 9200 3800 50  0001 C CNN
 	1    9200 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5DDD4708
-P 7800 3800
-F 0 "R1" V 7915 3800 50  0000 C CNN
-F 1 "4k7" V 8006 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7730 3800 50  0001 C CNN
-F 3 "~" H 7800 3800 50  0001 C CNN
-	1    7800 3800
-	0    1    1    0   
-$EndComp
 Text Label 8650 3600 0    50   ~ 0
 TD
 Text Label 8650 3800 0    50   ~ 0
@@ -77,9 +66,6 @@ Text Label 8650 3700 0    50   ~ 0
 RTS
 Text Label 8650 4000 0    50   ~ 0
 DTR
-Wire Wire Line
-	7650 3500 7650 3600
-Connection ~ 7650 3600
 NoConn ~ 8900 4100
 NoConn ~ 8900 3400
 NoConn ~ 8900 3500
@@ -149,112 +135,22 @@ Wire Wire Line
 Text Label 3500 3500 0    50   ~ 0
 UPDI
 $Comp
-L Transistor_BJT:BC847BPN Q1
-U 1 1 5DDF4A3F
-P 7050 3800
-F 0 "Q1" H 7241 3846 50  0000 L CNN
-F 1 "BC847BPN" H 7241 3755 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 7250 3900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 7050 3800 50  0001 C CNN
-	1    7050 3800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC847BPN Q1
-U 2 1 5DDF77D1
-P 7950 3200
-F 0 "Q1" H 8141 3246 50  0000 L CNN
-F 1 "BC847BPN" H 8141 3155 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 8150 3300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 7950 3200 50  0001 C CNN
-	2    7950 3200
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5DDFC6FD
-P 7400 2900
-F 0 "R2" V 7607 2900 50  0000 C CNN
-F 1 "4k7" V 7516 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7330 2900 50  0001 C CNN
-F 3 "~" H 7400 2900 50  0001 C CNN
-	1    7400 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5DDFED5A
-P 6950 4000
-F 0 "#PWR0104" H 6950 3750 50  0001 C CNN
-F 1 "GND" H 6955 3827 50  0000 C CNN
-F 2 "" H 6950 4000 50  0001 C CNN
-F 3 "" H 6950 4000 50  0001 C CNN
-	1    6950 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR0105
-U 1 1 5DDFF54C
-P 8050 2700
-F 0 "#PWR0105" H 8050 2550 50  0001 C CNN
-F 1 "VDD" H 8068 2873 50  0000 C CNN
-F 2 "" H 8050 2700 50  0001 C CNN
-F 3 "" H 8050 2700 50  0001 C CNN
-	1    8050 2700
+P 7050 2500
+F 0 "#PWR0104" H 7050 2250 50  0001 C CNN
+F 1 "GND" H 7055 2327 50  0000 C CNN
+F 2 "" H 7050 2500 50  0001 C CNN
+F 3 "" H 7050 2500 50  0001 C CNN
+	1    7050 2500
 	1    0    0    -1  
 $EndComp
 Connection ~ 3750 3900
-Wire Wire Line
-	6650 4000 6650 3600
-Wire Wire Line
-	6650 3600 6950 3600
 Connection ~ 3850 4000
-Wire Wire Line
-	7950 3800 8050 3800
-Wire Wire Line
-	8050 3400 8050 3800
-Connection ~ 6950 3600
-Wire Wire Line
-	6950 2900 7250 2900
-Wire Wire Line
-	6950 2900 6950 3600
-Wire Wire Line
-	7550 2900 8050 2900
-Wire Wire Line
-	8050 2900 8050 2700
-Wire Wire Line
-	8050 3000 8050 2900
-Connection ~ 8050 2900
 Wire Notes Line
-	8250 2400 6800 2400
-Text Notes 6850 2400 0    50   ~ 0
+	8250 1750 6800 1750
+Text Notes 6850 1750 0    50   ~ 0
 RS-232 level conversion
-$Comp
-L Device:R R4
-U 1 1 5DDEECC2
-P 7400 3200
-F 0 "R4" V 7193 3200 50  0000 C CNN
-F 1 "10k" V 7284 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7330 3200 50  0001 C CNN
-F 3 "~" H 7400 3200 50  0001 C CNN
-	1    7400 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5DDF3326
-P 7400 3800
-F 0 "R3" V 7193 3800 50  0000 C CNN
-F 1 "10k" V 7284 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7330 3800 50  0001 C CNN
-F 3 "~" H 7400 3800 50  0001 C CNN
-	1    7400 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7550 3800 7550 3600
-Wire Wire Line
-	7550 3600 7650 3600
 Wire Notes Line
 	3500 2400 4150 2400
 Wire Notes Line
@@ -283,10 +179,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 4200 8600 4350
 Wire Wire Line
-	7650 3600 8900 3600
-Wire Wire Line
-	8050 3800 8900 3800
-Connection ~ 8050 3800
+	8050 3600 8900 3600
 Wire Wire Line
 	8500 4000 8900 4000
 Wire Wire Line
@@ -397,12 +290,6 @@ Wire Notes Line
 	6700 1750 6700 3450
 Wire Notes Line
 	4250 3450 4250 1750
-Wire Wire Line
-	6750 3900 6750 3200
-Wire Wire Line
-	6750 3200 7250 3200
-Wire Wire Line
-	7550 3200 7750 3200
 Text Notes 4300 1750 0    50   ~ 0
 TTY interface
 $Comp
@@ -439,9 +326,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5150 2600 
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3900 6750 3900
-Wire Wire Line
-	3850 4000 6650 4000
+	3750 3900 6850 3900
 Wire Notes Line
 	4250 1750 6700 1750
 Wire Notes Line
@@ -451,11 +336,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3500 4100 3800
 Wire Wire Line
-	4100 3800 6550 3800
-Wire Wire Line
-	6550 3800 6550 3500
-Wire Wire Line
-	6550 3500 7100 3500
+	4100 3800 6950 3800
 Connection ~ 3900 3500
 $Comp
 L power:VDD #PWR0109
@@ -511,11 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 4000 8500 4600
 Wire Notes Line
-	6800 2400 6800 4250
-Wire Notes Line
 	6800 4250 8250 4250
-Wire Notes Line
-	8250 4250 8250 2400
 Wire Wire Line
 	4400 2400 4600 2400
 NoConn ~ 6600 1950
@@ -570,21 +447,17 @@ F 3 "" H 5600 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 2900 5600 2900
-Wire Wire Line
-	7500 3500 7650 3500
 $Comp
 L Jumper:Jumper_2_Bridged JP3
 U 1 1 5E09C5A1
-P 7300 3500
-F 0 "JP3" H 7300 3695 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 7300 3604 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7300 3500 50  0001 C CNN
-F 3 "~" H 7300 3500 50  0001 C CNN
-	1    7300 3500
+P 7300 2950
+F 0 "JP3" H 7300 3053 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 7300 3054 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7300 2950 50  0001 C CNN
+F 3 "~" H 7300 2950 50  0001 C CNN
+	1    7300 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 3600 7650 3800
 Wire Wire Line
 	5800 2200 5850 2200
 Wire Wire Line
@@ -805,4 +678,182 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2776.pdf" H 3650 6250 50  0001 C CNN
 	1    5500 5000
 	-1   0    0    -1  
 $EndComp
+$Comp
+L MAX3188:MAX3188EEUT+T U?
+U 1 1 5E3F669C
+P 6900 2250
+F 0 "U?" H 7500 2650 60  0000 C CNN
+F 1 "MAX3188EEUT+T" H 7500 2550 60  0000 C CNN
+F 2 "21-0058I" H 8100 2490 60  0001 C CNN
+F 3 "" H 6900 2250 60  0000 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0105
+U 1 1 5DDFF54C
+P 8000 2000
+F 0 "#PWR0105" H 8000 1850 50  0001 C CNN
+F 1 "VDD" H 8018 2173 50  0000 C CNN
+F 2 "" H 8000 2000 50  0001 C CNN
+F 3 "" H 8000 2000 50  0001 C CNN
+	1    8000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5E44CF6B
+P 8150 2000
+F 0 "#PWR?" H 8150 1850 50  0001 C CNN
+F 1 "VEE" H 8167 2173 50  0000 C CNN
+F 2 "" H 8150 2000 50  0001 C CNN
+F 3 "" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2350 8150 2350
+Wire Wire Line
+	8150 2350 8150 2000
+Wire Wire Line
+	7900 2250 8000 2250
+Wire Wire Line
+	8000 2250 8000 2000
+Wire Wire Line
+	6850 2450 7100 2450
+Wire Wire Line
+	7900 2450 8150 2450
+Wire Wire Line
+	7100 2350 7050 2350
+Wire Wire Line
+	7050 2350 7050 2500
+Wire Wire Line
+	7100 2250 6950 2250
+Wire Wire Line
+	6950 2250 6950 2000
+Wire Wire Line
+	6950 2000 8000 2000
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5E47F15A
+P 7650 3900
+F 0 "Q?" V 7885 3900 50  0000 C CNN
+F 1 "BC847" V 7976 3900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7850 3825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7650 3900 50  0001 L CNN
+	1    7650 3900
+	0    -1   1    0   
+$EndComp
+Wire Notes Line
+	6800 1750 6800 4250
+Wire Notes Line
+	8250 1750 8250 4250
+Wire Wire Line
+	6950 3800 6950 2950
+Wire Wire Line
+	6950 2950 7100 2950
+Wire Wire Line
+	6850 2450 6850 3900
+Wire Wire Line
+	8150 3800 8900 3800
+$Comp
+L Device:R R?
+U 1 1 5E4D4F50
+P 7650 3500
+F 0 "R?" H 7580 3454 50  0000 R CNN
+F 1 "4k7" H 7580 3545 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 3500 50  0001 C CNN
+F 3 "~" H 7650 3500 50  0001 C CNN
+	1    7650 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 2950 7500 2950
+Wire Wire Line
+	8150 2450 8150 2950
+Wire Wire Line
+	8050 2950 8150 2950
+Wire Wire Line
+	7750 2950 7650 2950
+Connection ~ 7650 2950
+Connection ~ 8150 2950
+Wire Wire Line
+	7650 2950 7650 3200
+Connection ~ 8000 2000
+Wire Wire Line
+	8150 2950 8150 3800
+Wire Notes Line
+	6900 2800 8200 2800
+Wire Notes Line
+	8200 2800 8200 3100
+Wire Notes Line
+	8200 3100 6900 3100
+Wire Notes Line
+	6900 3100 6900 2800
+Text Notes 6950 2800 0    50   ~ 0
+UPDI
+$Comp
+L Device:R R1
+U 1 1 5DDD4708
+P 7900 2950
+F 0 "R1" V 7700 2950 50  0000 C CNN
+F 1 "4k7" V 7800 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7830 2950 50  0001 C CNN
+F 3 "~" H 7900 2950 50  0001 C CNN
+	1    7900 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 3600 8050 3200
+Wire Wire Line
+	7650 3200 8050 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5E5A8C16
+P 8050 4000
+F 0 "#PWR?" H 8050 3750 50  0001 C CNN
+F 1 "GND" H 8055 3827 50  0000 C CNN
+F 2 "" H 8050 4000 50  0001 C CNN
+F 3 "" H 8050 4000 50  0001 C CNN
+	1    8050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3700 7650 3650
+$Comp
+L Device:R R?
+U 1 1 5E5E321A
+P 7100 3700
+F 0 "R?" H 7030 3654 50  0000 R CNN
+F 1 "4k7" H 7030 3745 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7030 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5E5E3A09
+P 7100 3450
+F 0 "#PWR?" H 7100 3300 50  0001 C CNN
+F 1 "VDD" H 7117 3623 50  0000 C CNN
+F 2 "" H 7100 3450 50  0001 C CNN
+F 3 "" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3450 7100 3550
+Wire Wire Line
+	7650 3200 7650 3350
+Connection ~ 7650 3200
+Wire Wire Line
+	7850 4000 8050 4000
+Wire Wire Line
+	7100 4000 7450 4000
+Wire Wire Line
+	3850 4000 7100 4000
+Connection ~ 7100 4000
+Wire Wire Line
+	7100 3850 7100 4000
 $EndSCHEMATC

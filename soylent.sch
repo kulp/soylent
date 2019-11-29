@@ -288,11 +288,7 @@ Wire Wire Line
 	8050 3800 8900 3800
 Connection ~ 8050 3800
 Wire Wire Line
-	8500 4500 8050 4500
-Wire Wire Line
 	8500 4000 8900 4000
-Wire Wire Line
-	8350 4400 7900 4400
 Wire Wire Line
 	8350 3700 8900 3700
 $Comp
@@ -309,126 +305,82 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5DE1D470
-P 7150 5500
-F 0 "#PWR0103" H 7150 5250 50  0001 C CNN
-F 1 "GND" H 7155 5327 50  0000 C CNN
-F 2 "" H 7150 5500 50  0001 C CNN
-F 3 "" H 7150 5500 50  0001 C CNN
-	1    7150 5500
+P 6500 5500
+F 0 "#PWR0103" H 6500 5250 50  0001 C CNN
+F 1 "GND" H 6505 5327 50  0000 C CNN
+F 2 "" H 6500 5500 50  0001 C CNN
+F 3 "" H 6500 5500 50  0001 C CNN
+	1    6500 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5DE1E17C
-P 6500 4900
-F 0 "JP1" H 6500 5013 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 6500 5014 50  0001 C CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 6500 4900 50  0001 C CNN
-F 3 "~" H 6500 4900 50  0001 C CNN
-	1    6500 4900
-	1    0    0    -1  
+P 6650 4750
+F 0 "JP1" V 6650 4818 50  0000 L CNN
+F 1 "SolderJumper_2_Open" H 6650 4864 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 6650 4750 50  0001 C CNN
+F 3 "~" H 6650 4750 50  0001 C CNN
+	1    6650 4750
+	0    1    1    0   
 $EndComp
 $Comp
 L power:VDD #PWR0107
 U 1 1 5DE1EC76
-P 6250 4900
-F 0 "#PWR0107" H 6250 4750 50  0001 C CNN
-F 1 "VDD" H 6267 5073 50  0000 C CNN
-F 2 "" H 6250 4900 50  0001 C CNN
-F 3 "" H 6250 4900 50  0001 C CNN
-	1    6250 4900
+P 6500 4600
+F 0 "#PWR0107" H 6500 4450 50  0001 C CNN
+F 1 "VDD" H 6517 4773 50  0000 C CNN
+F 2 "" H 6500 4600 50  0001 C CNN
+F 3 "" H 6500 4600 50  0001 C CNN
+	1    6500 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 5DE20E78
-P 7800 4900
-F 0 "JP2" H 7800 5013 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 7800 5014 50  0001 C CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7800 4900 50  0001 C CNN
-F 3 "~" H 7800 4900 50  0001 C CNN
-	1    7800 4900
-	1    0    0    -1  
+P 7750 4600
+F 0 "JP2" V 7750 4512 50  0000 R CNN
+F 1 "SolderJumper_2_Bridged" H 7750 4714 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7750 4600 50  0001 C CNN
+F 3 "~" H 7750 4600 50  0001 C CNN
+	1    7750 4600
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7550 4900 7650 4900
-Wire Wire Line
-	7150 5300 7150 5400
 $Comp
 L Device:C C2
 U 1 1 5DE23CE2
-P 7300 5400
-F 0 "C2" V 7048 5400 50  0000 C CNN
-F 1 "1u" V 7139 5400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7338 5250 50  0001 C CNN
-F 3 "~" H 7300 5400 50  0001 C CNN
-	1    7300 5400
-	0    1    1    0   
+P 7750 5100
+F 0 "C2" H 7635 5054 50  0000 R CNN
+F 1 "2.2u" H 7635 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7788 4950 50  0001 C CNN
+F 3 "~" H 7750 5100 50  0001 C CNN
+	1    7750 5100
+	-1   0    0    1   
 $EndComp
-Connection ~ 7150 5400
-Wire Wire Line
-	7150 5400 7150 5500
 $Comp
 L Device:C C1
 U 1 1 5DE245AB
-P 7000 5400
-F 0 "C1" V 6748 5400 50  0000 C CNN
-F 1 "1u" V 6839 5400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 5250 50  0001 C CNN
-F 3 "~" H 7000 5400 50  0001 C CNN
-	1    7000 5400
-	0    1    1    0   
+P 6500 5100
+F 0 "C1" H 6385 5054 50  0000 R CNN
+F 1 "2.2u" H 6385 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6538 4950 50  0001 C CNN
+F 3 "~" H 6500 5100 50  0001 C CNN
+	1    6500 5100
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6250 4900 6350 4900
-Wire Wire Line
 	6650 4900 6750 4900
-Connection ~ 6650 4900
-Wire Wire Line
-	6650 5400 6850 5400
-Wire Wire Line
-	6650 4900 6650 5400
-Wire Wire Line
-	7450 5400 7650 5400
 $Comp
 L Device:D D1
 U 1 1 5DE2B802
-P 7900 4550
-F 0 "D1" V 7946 4628 50  0000 L CNN
-F 1 "D" V 7855 4628 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 4550 50  0001 C CNN
-F 3 "~" H 7900 4550 50  0001 C CNN
-	1    7900 4550
-	0    -1   -1   0   
+P 8050 4450
+F 0 "D1" H 8050 4650 50  0000 C CNN
+F 1 "D" H 8050 4550 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4450 50  0001 C CNN
+F 3 "~" H 8050 4450 50  0001 C CNN
+	1    8050 4450
+	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D D2
-U 1 1 5DE2CA20
-P 8050 4650
-F 0 "D2" V 8096 4571 50  0000 R CNN
-F 1 "D" V 8005 4571 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4650 50  0001 C CNN
-F 3 "~" H 8050 4650 50  0001 C CNN
-	1    8050 4650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7650 5400 7650 5100
-Wire Wire Line
-	7900 4700 7900 4800
-Wire Wire Line
-	7900 4800 7950 4800
-Wire Wire Line
-	7550 5100 7650 5100
-Connection ~ 7650 5100
-Wire Wire Line
-	7650 5100 7650 4900
-Connection ~ 7650 4900
-Wire Wire Line
-	7950 4800 7950 4900
-Connection ~ 7950 4800
-Wire Wire Line
-	7950 4800 8050 4800
 Text Label 3500 3600 0    50   ~ 0
 WIN
 Text Label 3500 3700 0    50   ~ 0
@@ -439,14 +391,8 @@ Text Label 3500 3900 0    50   ~ 0
 TX
 Text Label 3500 4000 0    50   ~ 0
 RX
-Wire Notes Line
-	8250 5750 6150 5750
-Wire Notes Line
-	6150 5750 6150 4350
-Wire Notes Line
-	6150 4350 8250 4350
-Text Notes 6200 4350 0    50   ~ 0
-Parasitic power
+Text Notes 4800 4350 0    50   ~ 0
+Power regulation
 Wire Notes Line
 	6700 1750 6700 3450
 Wire Notes Line
@@ -561,11 +507,9 @@ Wire Wire Line
 Wire Wire Line
 	4600 2800 4600 2700
 Wire Wire Line
-	8350 3700 8350 4400
+	8350 3700 8350 4450
 Wire Wire Line
-	8500 4000 8500 4500
-Wire Notes Line
-	8250 5750 8250 4350
+	8500 4000 8500 4600
 Wire Notes Line
 	6800 2400 6800 4250
 Wire Notes Line
@@ -714,5 +658,151 @@ F 2 "Resistors_SMD:R_0603_HandSoldering" V 6030 2450 50  0001 C CNN
 F 3 "~" H 6100 2450 50  0001 C CNN
 	1    6100 2450
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 5450 6500 5500
+Connection ~ 6500 5450
+Wire Wire Line
+	5500 4600 5900 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	6500 4600 6650 4600
+Wire Wire Line
+	6500 4950 6500 4600
+Wire Wire Line
+	5500 4600 5500 4700
+Wire Wire Line
+	5900 4900 5900 4600
+Wire Wire Line
+	5900 5000 6050 5000
+Wire Wire Line
+	6050 5000 6050 4900
+Wire Wire Line
+	6050 4900 6250 4900
+Wire Wire Line
+	6250 4900 6250 4950
+Wire Wire Line
+	5900 5200 6050 5200
+Wire Wire Line
+	6050 5200 6050 5300
+Wire Wire Line
+	6050 5300 6250 5300
+Wire Wire Line
+	6250 5300 6250 5250
+Wire Wire Line
+	5900 4600 6500 4600
+Connection ~ 5900 4600
+Wire Wire Line
+	5500 5450 5500 5400
+Wire Wire Line
+	5500 5450 6500 5450
+$Comp
+L power:VEE #PWR?
+U 1 1 5E2B9197
+P 4900 4600
+F 0 "#PWR?" H 4900 4450 50  0001 C CNN
+F 1 "VEE" H 4917 4773 50  0000 C CNN
+F 2 "" H 4900 4600 50  0001 C CNN
+F 3 "" H 4900 4600 50  0001 C CNN
+	1    4900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2BD0FD
+P 4900 5100
+F 0 "C?" H 4785 5054 50  0000 R CNN
+F 1 "2.2u" H 4785 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 4950 50  0001 C CNN
+F 3 "~" H 4900 5100 50  0001 C CNN
+	1    4900 5100
+	-1   0    0    1   
+$EndComp
+Connection ~ 5500 5450
+Wire Wire Line
+	4900 4600 4900 4900
+Wire Wire Line
+	4900 5450 5500 5450
+Wire Wire Line
+	5100 4900 4900 4900
+Connection ~ 4900 4900
+Wire Wire Line
+	4900 4900 4900 4950
+Wire Notes Line
+	4750 5750 8250 5750
+Wire Notes Line
+	4750 4350 8250 4350
+$Comp
+L Device:D D2
+U 1 1 5DE2CA20
+P 8050 4600
+F 0 "D2" H 8050 4476 50  0000 C CNN
+F 1 "D" H 8050 4385 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4600 50  0001 C CNN
+F 3 "~" H 8050 4600 50  0001 C CNN
+	1    8050 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 4900
+Wire Wire Line
+	7750 4750 7750 4900
+Wire Wire Line
+	8200 4450 8350 4450
+Wire Wire Line
+	8200 4600 8500 4600
+$Comp
+L Device:C C?
+U 1 1 5E21145A
+P 6250 5100
+F 0 "C?" H 6136 5146 50  0000 R CNN
+F 1 "1u" H 6136 5055 50  0000 R CNN
+F 2 "" H 6288 4950 50  0001 C CNN
+F 3 "~" H 6250 5100 50  0001 C CNN
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 5450
+Wire Wire Line
+	7150 5450 6500 5450
+Wire Wire Line
+	7750 4900 7750 4950
+Wire Wire Line
+	7900 4450 7750 4450
+Wire Wire Line
+	7900 4600 7900 4450
+Connection ~ 7900 4450
+Wire Wire Line
+	7550 4900 7600 4900
+Wire Wire Line
+	7550 5100 7600 5100
+Wire Wire Line
+	7600 5100 7600 4900
+Connection ~ 7600 4900
+Wire Wire Line
+	7600 4900 7750 4900
+Wire Wire Line
+	7150 5450 7750 5450
+Wire Wire Line
+	4900 5250 4900 5450
+Wire Wire Line
+	6500 5250 6500 5450
+Wire Wire Line
+	7150 5300 7150 5450
+Wire Wire Line
+	7750 5250 7750 5450
+Wire Notes Line
+	8250 4350 8250 5750
+Wire Notes Line
+	4750 4350 4750 5750
+$Comp
+L Regulator_SwitchedCapacitor:LM2776 U?
+U 1 1 5E1E15CA
+P 5500 5000
+F 0 "U?" H 5700 5450 50  0000 C CNN
+F 1 "LM2776" H 5700 5350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5550 4650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2776.pdf" H 3650 6250 50  0001 C CNN
+	1    5500 5000
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -684,7 +684,7 @@ U 1 1 5E3F669C
 P 6900 2250
 F 0 "U4" H 7500 2650 60  0000 C CNN
 F 1 "MAX3188EEUT+T" H 7500 2550 60  0000 C CNN
-F 2 "21-0058I" H 8100 2490 60  0001 C CNN
+F 2 "MAX3188:MAX3188EEUT&plus_T" H 8100 2490 60  0001 C CNN
 F 3 "" H 6900 2250 60  0000 C CNN
 	1    6900 2250
 	1    0    0    -1  
@@ -749,7 +749,7 @@ Wire Notes Line
 Wire Notes Line
 	8250 1750 8250 4250
 Wire Wire Line
-	6950 3800 6950 2950
+	6950 3800 6950 3100
 Wire Wire Line
 	6950 2950 7100 2950
 Wire Wire Line
@@ -759,12 +759,12 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 5E4D4F50
-P 7650 3500
-F 0 "R3" H 7580 3454 50  0000 R CNN
-F 1 "4k7" H 7580 3545 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 3500 50  0001 C CNN
-F 3 "~" H 7650 3500 50  0001 C CNN
-	1    7650 3500
+P 7650 3550
+F 0 "R3" H 7580 3504 50  0000 R CNN
+F 1 "4k7" H 7580 3595 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 3550 50  0001 C CNN
+F 3 "~" H 7650 3550 50  0001 C CNN
+	1    7650 3550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -778,18 +778,14 @@ Wire Wire Line
 Connection ~ 7650 2950
 Connection ~ 8150 2950
 Wire Wire Line
-	7650 2950 7650 3200
+	7650 2950 7650 3100
 Connection ~ 8000 2000
 Wire Wire Line
 	8150 2950 8150 3800
 Wire Notes Line
 	6900 2800 8200 2800
 Wire Notes Line
-	8200 2800 8200 3100
-Wire Notes Line
-	8200 3100 6900 3100
-Wire Notes Line
-	6900 3100 6900 2800
+	8200 3200 6900 3200
 Text Notes 6950 2800 0    50   ~ 0
 UPDI
 $Comp
@@ -804,9 +800,9 @@ F 3 "~" H 7900 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8050 3600 8050 3200
+	8050 3600 8050 3300
 Wire Wire Line
-	7650 3200 8050 3200
+	7650 3300 8050 3300
 $Comp
 L power:GND #PWR0114
 U 1 1 5E5A8C16
@@ -818,8 +814,6 @@ F 3 "" H 8050 4000 50  0001 C CNN
 	1    8050 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 3700 7650 3650
 $Comp
 L Device:R R2
 U 1 1 5E5E321A
@@ -845,8 +839,8 @@ $EndComp
 Wire Wire Line
 	7100 3450 7100 3550
 Wire Wire Line
-	7650 3200 7650 3350
-Connection ~ 7650 3200
+	7650 3300 7650 3400
+Connection ~ 7650 3300
 Wire Wire Line
 	7850 4000 8050 4000
 Wire Wire Line
@@ -856,4 +850,29 @@ Wire Wire Line
 Connection ~ 7100 4000
 Wire Wire Line
 	7100 3850 7100 4000
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5E67EC72
+P 7300 3100
+F 0 "JP?" H 7300 3213 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 7300 3214 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7300 3100 50  0001 C CNN
+F 3 "~" H 7300 3100 50  0001 C CNN
+	1    7300 3100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8200 2800 8200 3200
+Wire Notes Line
+	6900 2800 6900 3200
+Wire Wire Line
+	7150 3100 6950 3100
+Connection ~ 6950 3100
+Wire Wire Line
+	6950 3100 6950 2950
+Wire Wire Line
+	7450 3100 7650 3100
+Connection ~ 7650 3100
+Wire Wire Line
+	7650 3100 7650 3300
 $EndSCHEMATC

@@ -761,17 +761,6 @@ F 3 "~" H 5000 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
-U 1 1 5E6AC672
-P 5500 2500
-F 0 "R7" V 5600 2500 50  0000 C CNN
-F 1 "150k" V 5500 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 2500 50  0001 C CNN
-F 3 "~" H 5500 2500 50  0001 C CNN
-	1    5500 2500
-	0    1    1    0   
-$EndComp
-$Comp
 L power:VEE #PWR0117
 U 1 1 5E6A50AD
 P 5000 2200
@@ -919,4 +908,15 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 $EndComp
 Wire Wire Line
 	3750 3900 6850 3900
+$Comp
+L Device:RTRIM R7
+U 1 1 5E9918DC
+P 5500 2500
+F 0 "R7" V 5260 2500 50  0000 C CNN
+F 1 "RTRIM" V 5351 2500 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3214W" V 5430 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

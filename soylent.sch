@@ -62,10 +62,6 @@ Text Label 8650 3600 0    50   ~ 0
 TD
 Text Label 8650 3800 0    50   ~ 0
 RD
-Text Label 8650 3700 0    50   ~ 0
-RTS
-Text Label 8650 4000 0    50   ~ 0
-DTR
 NoConn ~ 8900 4100
 NoConn ~ 8900 3400
 NoConn ~ 8900 3500
@@ -180,10 +176,6 @@ Wire Wire Line
 	8600 4200 8600 4350
 Wire Wire Line
 	8050 3600 8900 3600
-Wire Wire Line
-	8500 4000 8900 4000
-Wire Wire Line
-	8350 3700 8900 3700
 $Comp
 L Regulator_Linear:MIC5504-3.3YM5 U2
 U 1 1 5DE19C60
@@ -229,17 +221,6 @@ F 3 "" H 6500 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5DE20E78
-P 7750 4600
-F 0 "JP2" V 7750 4512 50  0000 R CNN
-F 1 "SolderJumper_2_Bridged" H 7750 4714 50  0001 C CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7750 4600 50  0001 C CNN
-F 3 "~" H 7750 4600 50  0001 C CNN
-	1    7750 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5DE23CE2
 P 7750 5100
@@ -263,17 +244,6 @@ F 3 "~" H 6500 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4900 6750 4900
-$Comp
-L Device:D D1
-U 1 1 5DE2B802
-P 8050 4450
-F 0 "D1" H 8050 4650 50  0000 C CNN
-F 1 "D" H 8050 4550 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4450 50  0001 C CNN
-F 3 "~" H 8050 4450 50  0001 C CNN
-	1    8050 4450
-	1    0    0    -1  
-$EndComp
 Text Label 3500 3600 0    50   ~ 0
 WIN
 Text Label 3500 3700 0    50   ~ 0
@@ -299,10 +269,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 3800 6950 3800
 Connection ~ 3900 3500
-Wire Wire Line
-	8350 3700 8350 4450
-Wire Wire Line
-	8500 4000 8500 4600
 Wire Notes Line
 	6800 4250 8250 4250
 Wire Wire Line
@@ -393,24 +359,7 @@ Wire Notes Line
 	4750 5750 8250 5750
 Wire Notes Line
 	4750 4350 8250 4350
-$Comp
-L Device:D D2
-U 1 1 5DE2CA20
-P 8050 4600
-F 0 "D2" H 8050 4476 50  0000 C CNN
-F 1 "D" H 8050 4385 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4600 50  0001 C CNN
-F 3 "~" H 8050 4600 50  0001 C CNN
-	1    8050 4600
-	1    0    0    -1  
-$EndComp
 Connection ~ 7750 4900
-Wire Wire Line
-	7750 4750 7750 4900
-Wire Wire Line
-	8200 4450 8350 4450
-Wire Wire Line
-	8200 4600 8500 4600
 $Comp
 L Device:C C5
 U 1 1 5E21145A
@@ -427,11 +376,6 @@ Wire Wire Line
 	7150 5450 6500 5450
 Wire Wire Line
 	7750 4900 7750 4950
-Wire Wire Line
-	7900 4450 7750 4450
-Wire Wire Line
-	7900 4600 7900 4450
-Connection ~ 7900 4450
 Wire Wire Line
 	7550 4900 7600 4900
 Wire Wire Line
@@ -939,4 +883,28 @@ Wire Wire Line
 	5800 1650 5800 1800
 Wire Wire Line
 	5800 1800 5900 1800
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5DE20E78
+P 7750 4750
+F 0 "JP2" V 7750 4662 50  0000 R CNN
+F 1 "SolderJumper_2_Bridged" H 7750 4864 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7750 4750 50  0001 C CNN
+F 3 "~" H 7750 4750 50  0001 C CNN
+	1    7750 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+VDC #PWR?
+U 1 1 5EB4A053
+P 7750 4600
+F 0 "#PWR?" H 7750 4500 50  0001 C CNN
+F 1 "+VDC" H 7646 4688 50  0000 R CNN
+F 2 "" H 7750 4600 50  0001 C CNN
+F 3 "" H 7750 4600 50  0001 C CNN
+	1    7750 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8900 4000
+NoConn ~ 8900 3700
 $EndSCHEMATC

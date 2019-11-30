@@ -299,8 +299,6 @@ F 3 "" H 6600 2150 50  0001 C CNN
 	1    6600 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 3900 4400 3900
 Wire Notes Line
 	4250 1050 6700 1050
 Wire Notes Line
@@ -806,17 +804,6 @@ F 3 "" H 5000 1600 50  0001 C CNN
 	1    5000 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_BJT:BC847BPN Q3
-U 2 1 5E1133DF
-P 5850 2900
-F 0 "Q3" H 5750 3100 50  0000 L CNN
-F 1 "BC847BPN" H 5750 3200 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 6050 3000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BPN.pdf" H 5850 2900 50  0001 C CNN
-	2    5850 2900
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5950 1950 5950 2700
 $Comp
@@ -911,12 +898,6 @@ Wire Wire Line
 Connection ~ 5250 1300
 Wire Wire Line
 	5250 1300 5350 1300
-Connection ~ 4400 3600
-Wire Wire Line
-	4400 3600 4400 3900
-Connection ~ 4400 3900
-Wire Wire Line
-	4400 3900 6850 3900
 Wire Notes Line
 	4350 1150 4350 2700
 Wire Notes Line
@@ -925,4 +906,17 @@ Wire Notes Line
 	6700 3450 6700 1050
 Wire Notes Line
 	4250 3450 4250 1050
+$Comp
+L Transistor_BJT:BC847 Q2
+U 1 1 5E97D704
+P 5850 2900
+F 0 "Q2" H 6041 2946 50  0000 L CNN
+F 1 "BC847" H 6041 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6050 2825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5850 2900 50  0001 L CNN
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3900 6850 3900
 $EndSCHEMATC

@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 6)
-    (tracks 196)
+    (tracks 194)
     (zones 0)
     (modules 31)
     (nets 27)
@@ -1458,15 +1458,13 @@
   (segment (start 246.822 39.7964) (end 247.3604 39.258) (width 0.25) (layer F.Cu) (net 3) (status 20))
   (segment (start 246.822 41.1148) (end 246.822 39.7964) (width 0.25) (layer F.Cu) (net 3) (status 10))
   (segment (start 246.822 43.3148) (end 246.822 41.1148) (width 0.25) (layer F.Cu) (net 3) (status 30))
-  (segment (start 239.438 49.4396) (end 239.438 50.1396) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AED2) (status 20))
   (segment (start 239.438 54.1452) (end 239.2272 54.356) (width 0.25) (layer F.Cu) (net 4) (status 30))
-  (segment (start 239.582999 45.681) (end 240.7412 46.839201) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AED5))
-  (segment (start 239.582999 44.7706) (end 239.582999 45.681) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AED8) (status 10))
-  (segment (start 240.712999 46.870399) (end 240.712999 48.164601) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AEDE))
-  (segment (start 240.7412 46.842198) (end 240.712999 46.870399) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AEE1))
-  (segment (start 240.7412 46.839201) (end 240.7412 46.842198) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AEE4))
-  (segment (start 240.712999 48.164601) (end 239.438 49.4396) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AEDB))
   (segment (start 239.438 50.1396) (end 239.438 54.1452) (width 0.25) (layer F.Cu) (net 4) (tstamp 5DE1AA0D) (status 30))
+  (segment (start 239.438 49.4396) (end 239.438 50.1396) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 240.712999 46.870399) (end 240.712999 48.164601) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 239.582999 45.740399) (end 240.712999 46.870399) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 240.712999 48.164601) (end 239.438 49.4396) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 239.582999 44.7706) (end 239.582999 45.740399) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 236.4572 57.7428) (end 236.4572 54.356) (width 0.25) (layer F.Cu) (net 5) (status 20))
   (segment (start 237.7948 59.0804) (end 236.4572 57.7428) (width 0.25) (layer F.Cu) (net 5))
   (segment (start 244.7544 59.0804) (end 237.7948 59.0804) (width 0.25) (layer F.Cu) (net 5))
@@ -1625,7 +1623,7 @@
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 223.7994 20.193) (xy 254.7874 20.193) (xy 254.7874 62.103) (xy 223.7994 62.103)
+        (xy 223.7994 25.273) (xy 254.7874 25.273) (xy 254.7874 62.103) (xy 223.7994 62.103)
       )
     )
   )
@@ -1635,7 +1633,7 @@
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 223.7994 20.193) (xy 254.7874 20.193) (xy 254.7874 62.103) (xy 223.7994 62.103)
+        (xy 223.7994 25.273) (xy 254.7874 25.273) (xy 254.7874 62.103) (xy 223.7994 62.103)
       )
     )
   )

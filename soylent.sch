@@ -850,10 +850,10 @@ $EndComp
 NoConn ~ 8900 4000
 NoConn ~ 8900 3700
 $Comp
-L Regulator_Linear:LT1761-5 U?
+L Regulator_Linear:LT1761-5 U2
 U 1 1 5EB7E246
 P 7550 5100
-F 0 "U?" H 7550 5467 50  0000 C CNN
+F 0 "U2" H 7550 5467 50  0000 C CNN
 F 1 "LT1761-5" H 7550 5376 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 7550 5425 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf" H 7550 5100 50  0001 C CNN
@@ -861,10 +861,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+VDC #PWR?
+L power:+VDC #PWR0121
 U 1 1 5EB80E0B
 P 8050 4600
-F 0 "#PWR?" H 8050 4500 50  0001 C CNN
+F 0 "#PWR0121" H 8050 4500 50  0001 C CNN
 F 1 "+VDC" H 7946 4688 50  0000 R CNN
 F 2 "" H 8050 4600 50  0001 C CNN
 F 3 "" H 8050 4600 50  0001 C CNN
@@ -872,10 +872,10 @@ F 3 "" H 8050 4600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0122
 U 1 1 5EB81494
 P 7550 5400
-F 0 "#PWR?" H 7550 5150 50  0001 C CNN
+F 0 "#PWR0122" H 7550 5150 50  0001 C CNN
 F 1 "GND" H 7555 5227 50  0000 C CNN
 F 2 "" H 7550 5400 50  0001 C CNN
 F 3 "" H 7550 5400 50  0001 C CNN
@@ -892,10 +892,10 @@ Connection ~ 8050 5000
 Wire Wire Line
 	8050 4900 8050 5000
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5EB8BE10
 P 7000 5150
-F 0 "C?" H 6885 5104 50  0000 R CNN
+F 0 "C2" H 6885 5104 50  0000 R CNN
 F 1 "0.01u" H 6885 5195 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 5000 50  0001 C CNN
 F 3 "~" H 7000 5150 50  0001 C CNN
@@ -903,10 +903,10 @@ F 3 "~" H 7000 5150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5EB8D6AE
 P 8050 5250
-F 0 "C?" H 7936 5296 50  0000 R CNN
+F 0 "C6" H 7936 5296 50  0000 R CNN
 F 1 "1u" H 7936 5205 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8088 5100 50  0001 C CNN
 F 3 "~" H 8050 5250 50  0001 C CNN

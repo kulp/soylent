@@ -696,8 +696,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 2050 6100 2050
 Wire Wire Line
-	5250 2000 5250 2500
-Wire Wire Line
 	4500 1400 4500 1300
 $Comp
 L power:GND #PWR0120
@@ -735,31 +733,9 @@ F 3 "" H 5750 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2500 5650 2500
-Wire Wire Line
-	5250 2500 5350 2500
-Wire Wire Line
-	5150 2500 5250 2500
-Wire Wire Line
-	4850 2500 4400 2500
-Wire Wire Line
 	4400 1900 4600 1900
 Wire Wire Line
-	4400 2500 4400 1900
-Connection ~ 5250 2500
-Wire Wire Line
 	5200 2000 5250 2000
-$Comp
-L Device:R R5
-U 1 1 5E6ACC8A
-P 5000 2500
-F 0 "R5" V 5115 2500 50  0000 C CNN
-F 1 "50k" V 5000 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 2500 50  0001 C CNN
-F 3 "~" H 5000 2500 50  0001 C CNN
-	1    5000 2500
-	0    1    1    0   
-$EndComp
 $Comp
 L power:VEE #PWR0117
 U 1 1 5E6A50AD
@@ -856,9 +832,6 @@ Wire Wire Line
 	6000 2050 6000 1300
 Wire Wire Line
 	6000 1300 5650 1300
-Wire Wire Line
-	4400 2500 4400 3600
-Connection ~ 4400 2500
 Wire Notes Line
 	4350 2700 5900 2700
 Wire Notes Line
@@ -909,14 +882,25 @@ $EndComp
 Wire Wire Line
 	3750 3900 6850 3900
 $Comp
-L Device:RTRIM R7
-U 1 1 5E9918DC
-P 5500 2500
-F 0 "R7" V 5260 2500 50  0000 C CNN
-F 1 "150k" V 5351 2500 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3214W" V 5430 2500 50  0001 C CNN
-F 3 "~" H 5500 2500 50  0001 C CNN
-	1    5500 2500
-	0    1    1    0   
+L Device:R_POT_TRIM RV1
+U 1 1 5E9C81B2
+P 5250 2500
+F 0 "RV1" V 5135 2500 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5044 2500 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical" H 5250 2500 50  0001 C CNN
+F 3 "~" H 5250 2500 50  0001 C CNN
+	1    5250 2500
+	0    1    -1   0   
 $EndComp
+Wire Wire Line
+	4400 2500 4400 3600
+Wire Wire Line
+	4400 2500 4400 1900
+Connection ~ 4400 2500
+Wire Wire Line
+	4400 2500 5100 2500
+Wire Wire Line
+	5400 2500 5750 2500
+Wire Wire Line
+	5250 2350 5250 2000
 $EndSCHEMATC

@@ -1411,10 +1411,10 @@
     )
   )
 
-  (gr_line (start 222.7834 62.103) (end 222.7834 19.939) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 222.7834 62.103) (end 222.7834 24.511) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 255.8034 62.103) (end 222.7834 62.103) (layer Edge.Cuts) (width 0.1) (tstamp 5DDEBDDF))
-  (gr_line (start 255.8034 19.939) (end 255.8034 62.103) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 222.7834 19.939) (end 255.8034 19.939) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 255.8034 24.511) (end 255.8034 62.103) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 222.7834 24.511) (end 255.8034 24.511) (layer Edge.Cuts) (width 0.1))
   (gr_text Vdd (at 254.6096 39.1668 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )

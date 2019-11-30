@@ -713,15 +713,6 @@ F 3 "" H 4500 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1000 5350 1000
-Connection ~ 5250 1000
-Wire Wire Line
-	5250 1450 5250 1000
-Wire Wire Line
-	5200 1500 5250 1450
-Wire Wire Line
-	5150 1000 5250 1000
-Wire Wire Line
 	4850 1000 4500 1000
 $Comp
 L Device:R R6
@@ -919,4 +910,13 @@ F 3 "~" H 5000 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 2100 5750 2200
+Wire Wire Line
+	5150 1000 5250 1000
+Wire Wire Line
+	5200 1500 5250 1500
+Wire Wire Line
+	5250 1500 5250 1000
+Connection ~ 5250 1000
+Wire Wire Line
+	5250 1000 5350 1000
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Saturday, November 30, 2019 at 03:18:34 PM
+update=Saturday, November 30, 2019 at 03:31:51 PM
 version=1
 last_client=kicad
 [general]
@@ -232,6 +232,17 @@ Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=HighPower
+Clearance=0.25
+TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.5
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

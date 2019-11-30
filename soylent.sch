@@ -177,17 +177,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 3600 8900 3600
 $Comp
-L Regulator_Linear:MIC5504-3.3YM5 U2
-U 1 1 5DE19C60
-P 7150 5000
-F 0 "U2" H 7150 5367 50  0000 C CNN
-F 1 "MIC5504-3.3YM5" H 7150 5276 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7150 4600 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 6900 5250 50  0001 C CNN
-	1    7150 5000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0103
 U 1 1 5DE1D470
 P 6500 5500
@@ -207,7 +196,7 @@ F 1 "SolderJumper_2_Open" H 6650 4864 50  0001 C CNN
 F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 6650 4750 50  0001 C CNN
 F 3 "~" H 6650 4750 50  0001 C CNN
 	1    6650 4750
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:VDD #PWR0107
@@ -221,17 +210,6 @@ F 3 "" H 6500 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
-U 1 1 5DE23CE2
-P 7750 5100
-F 0 "C2" H 7635 5054 50  0000 R CNN
-F 1 "2.2u" H 7635 5145 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7788 4950 50  0001 C CNN
-F 3 "~" H 7750 5100 50  0001 C CNN
-	1    7750 5100
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5DE245AB
 P 6500 5100
@@ -242,8 +220,6 @@ F 3 "~" H 6500 5100 50  0001 C CNN
 	1    6500 5100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6650 4900 6750 4900
 Text Label 3500 3600 0    50   ~ 0
 WIN
 Text Label 3500 3700 0    50   ~ 0
@@ -292,8 +268,6 @@ Connection ~ 6500 5450
 Wire Wire Line
 	5500 4600 5900 4600
 Connection ~ 6500 4600
-Wire Wire Line
-	6500 4600 6650 4600
 Wire Wire Line
 	6500 4950 6500 4600
 Wire Wire Line
@@ -356,10 +330,9 @@ Connection ~ 4900 4900
 Wire Wire Line
 	4900 4900 4900 4950
 Wire Notes Line
-	4750 5750 8250 5750
+	8250 5750 4750 5750
 Wire Notes Line
 	4750 4350 8250 4350
-Connection ~ 7750 4900
 $Comp
 L Device:C C5
 U 1 1 5E21145A
@@ -371,30 +344,10 @@ F 3 "~" H 6250 5100 50  0001 C CNN
 	1    6250 5100
 	1    0    0    -1  
 $EndComp
-Connection ~ 7150 5450
-Wire Wire Line
-	7150 5450 6500 5450
-Wire Wire Line
-	7750 4900 7750 4950
-Wire Wire Line
-	7550 4900 7600 4900
-Wire Wire Line
-	7550 5100 7600 5100
-Wire Wire Line
-	7600 5100 7600 4900
-Connection ~ 7600 4900
-Wire Wire Line
-	7600 4900 7750 4900
-Wire Wire Line
-	7150 5450 7750 5450
 Wire Wire Line
 	4900 5250 4900 5450
 Wire Wire Line
 	6500 5250 6500 5450
-Wire Wire Line
-	7150 5300 7150 5450
-Wire Wire Line
-	7750 5250 7750 5450
 Wire Notes Line
 	8250 4350 8250 5750
 Wire Notes Line
@@ -886,25 +839,95 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 5DE20E78
-P 7750 4750
-F 0 "JP2" V 7750 4662 50  0000 R CNN
-F 1 "SolderJumper_2_Bridged" H 7750 4864 50  0001 C CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 7750 4750 50  0001 C CNN
-F 3 "~" H 7750 4750 50  0001 C CNN
-	1    7750 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+VDC #PWR?
-U 1 1 5EB4A053
-P 7750 4600
-F 0 "#PWR?" H 7750 4500 50  0001 C CNN
-F 1 "+VDC" H 7646 4688 50  0000 R CNN
-F 2 "" H 7750 4600 50  0001 C CNN
-F 3 "" H 7750 4600 50  0001 C CNN
-	1    7750 4600
-	1    0    0    -1  
+P 8050 4750
+F 0 "JP2" V 8050 4662 50  0000 R CNN
+F 1 "SolderJumper_2_Bridged" H 8050 4864 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 8050 4750 50  0001 C CNN
+F 3 "~" H 8050 4750 50  0001 C CNN
+	1    8050 4750
+	0    -1   1    0   
 $EndComp
 NoConn ~ 8900 4000
 NoConn ~ 8900 3700
+$Comp
+L Regulator_Linear:LT1761-5 U?
+U 1 1 5EB7E246
+P 7550 5100
+F 0 "U?" H 7550 5467 50  0000 C CNN
+F 1 "LT1761-5" H 7550 5376 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 7550 5425 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf" H 7550 5100 50  0001 C CNN
+	1    7550 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR?
+U 1 1 5EB80E0B
+P 8050 4600
+F 0 "#PWR?" H 8050 4500 50  0001 C CNN
+F 1 "+VDC" H 7946 4688 50  0000 R CNN
+F 2 "" H 8050 4600 50  0001 C CNN
+F 3 "" H 8050 4600 50  0001 C CNN
+	1    8050 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB81494
+P 7550 5400
+F 0 "#PWR?" H 7550 5150 50  0001 C CNN
+F 1 "GND" H 7555 5227 50  0000 C CNN
+F 2 "" H 7550 5400 50  0001 C CNN
+F 3 "" H 7550 5400 50  0001 C CNN
+	1    7550 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5100 8050 5100
+Wire Wire Line
+	8050 5100 8050 5000
+Wire Wire Line
+	8050 5000 7950 5000
+Connection ~ 8050 5000
+Wire Wire Line
+	8050 4900 8050 5000
+$Comp
+L Device:C C?
+U 1 1 5EB8BE10
+P 7000 5150
+F 0 "C?" H 6885 5104 50  0000 R CNN
+F 1 "0.01u" H 6885 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 5000 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB8D6AE
+P 8050 5250
+F 0 "C?" H 7936 5296 50  0000 R CNN
+F 1 "1u" H 7936 5205 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8088 5100 50  0001 C CNN
+F 3 "~" H 8050 5250 50  0001 C CNN
+	1    8050 5250
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8050 5100
+Wire Wire Line
+	8050 5400 7550 5400
+Connection ~ 7550 5400
+Wire Wire Line
+	7150 5100 7150 5300
+Wire Wire Line
+	7150 5300 7000 5300
+Wire Wire Line
+	7150 5000 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 6650 5000
+Wire Wire Line
+	6650 5000 6650 4900
+Wire Wire Line
+	6650 4600 6500 4600
 $EndSCHEMATC

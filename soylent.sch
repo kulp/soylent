@@ -131,16 +131,6 @@ $EndSheet
 Wire Wire Line
 	5700 3400 5800 3400
 NoConn ~ 5800 3400
-$Sheet
-S 6100 2900 550  300 
-U 5ECDCFC2
-F0 "Power Regulation" 50
-F1 "power.sch" 50
-F2 "Vee" O R 6650 3000 50 
-F3 "Vdd" O R 6650 3100 50 
-F4 "GND" B L 6100 3100 50 
-F5 "+VDC" I L 6100 3000 50 
-$EndSheet
 Wire Wire Line
 	5700 3550 5800 3550
 Wire Wire Line
@@ -288,4 +278,21 @@ F7 "RD" I R 6650 4000 50
 F8 "UPDI" B L 6100 4150 50 
 F9 "RX" O L 6100 4000 50 
 $EndSheet
+$Sheet
+S 6100 2900 550  300 
+U 5ECDCFC2
+F0 "Power Regulation" 50
+F1 "power.sch" 50
+F2 "Vee" O R 6650 3000 50 
+F3 "Vdd" O R 6650 3100 50 
+F4 "GND" B L 6100 3100 50 
+F5 "+VDC" I L 6100 3000 50 
+$EndSheet
+Wire Wire Line
+	6100 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 3550
+Wire Wire Line
+	6000 3550 5800 3550
+Connection ~ 5800 3550
 $EndSCHEMATC

@@ -102,29 +102,7 @@ F 3 "" H 6650 3750 50  0001 C CNN
 	1    6650 3750
 	0    1    1    0   
 $EndComp
-$Sheet
-S 6100 3600 550  650 
-U 5ED01473
-F0 "RS-232 level conversion" 50
-F1 "rs232.sch" 50
-F2 "TD" O R 6650 3900 50 
-F3 "GND" B R 6650 4100 50 
-F4 "TX" I L 6100 3900 50 
-F5 "Vee" I R 6650 3650 50 
-F6 "Vdd" I R 6650 3750 50 
-F7 "RD" I R 6650 4000 50 
-F8 "UPDI" B L 6100 4150 50 
-F9 "RX" O L 6100 4000 50 
-$EndSheet
-Wire Wire Line
-	7100 4000 6650 4000
-Wire Wire Line
-	7100 3900 6650 3900
-Wire Wire Line
-	6800 4100 6650 4100
 Connection ~ 6800 4100
-Wire Wire Line
-	4700 4150 6100 4150
 Wire Wire Line
 	4700 3500 4700 4150
 $Comp
@@ -254,8 +232,6 @@ Wire Wire Line
 	4000 4850 4000 3900
 Connection ~ 4000 3900
 Wire Wire Line
-	4000 3900 6100 3900
-Wire Wire Line
 	4200 4850 4200 3600
 Connection ~ 4200 3600
 Wire Wire Line
@@ -284,8 +260,32 @@ Wire Wire Line
 Wire Wire Line
 	3450 4000 4100 4000
 Wire Wire Line
-	4100 4000 4100 4900
+	4100 4000 4100 4850
 Connection ~ 4100 4000
 Wire Wire Line
 	4100 4000 6100 4000
+Wire Wire Line
+	4700 4150 6100 4150
+Wire Wire Line
+	7100 4000 6650 4000
+Wire Wire Line
+	4000 3900 6100 3900
+Wire Wire Line
+	6800 4100 6650 4100
+Wire Wire Line
+	7100 3900 6650 3900
+$Sheet
+S 6100 3600 550  650 
+U 5ED01473
+F0 "RS-232 level conversion" 50
+F1 "rs232.sch" 50
+F2 "TD" O R 6650 3900 50 
+F3 "GND" B R 6650 4100 50 
+F4 "TX" I L 6100 3900 50 
+F5 "Vee" I R 6650 3650 50 
+F6 "Vdd" I R 6650 3750 50 
+F7 "RD" I R 6650 4000 50 
+F8 "UPDI" B L 6100 4150 50 
+F9 "RX" O L 6100 4000 50 
+$EndSheet
 $EndSCHEMATC

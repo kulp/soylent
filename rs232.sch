@@ -1,0 +1,275 @@
+EESchema Schematic File Version 4
+LIBS:soylent-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5ED0E38F
+P 5350 3400
+AR Path="/5ED0E38F" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5ED0E38F" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 5350 3150 50  0001 C CNN
+F 1 "GND" H 5355 3227 50  0000 C CNN
+F 2 "" H 5350 3400 50  0001 C CNN
+F 3 "" H 5350 3400 50  0001 C CNN
+	1    5350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Bridged JP?
+U 1 1 5ED0E399
+P 5600 3850
+AR Path="/5ED0E399" Ref="JP?"  Part="1" 
+AR Path="/5ED01473/5ED0E399" Ref="JP1"  Part="1" 
+F 0 "JP1" H 5600 3953 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 5600 3954 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 5600 3850 50  0001 C CNN
+F 3 "~" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX3188:MAX3188EEUT+T U?
+U 1 1 5ED0E39F
+P 5200 3150
+AR Path="/5ED0E39F" Ref="U?"  Part="1" 
+AR Path="/5ED01473/5ED0E39F" Ref="U4"  Part="1" 
+F 0 "U4" H 5800 3550 60  0000 C CNN
+F 1 "MAX3188EEUT+T" H 5800 3450 60  0000 C CNN
+F 2 "MAX3188:MAX3188EEUT&plus_T" H 6400 3390 60  0001 C CNN
+F 3 "" H 5200 3150 60  0000 C CNN
+	1    5200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3250 6450 3250
+Wire Wire Line
+	6450 3250 6450 2900
+Wire Wire Line
+	6200 3150 6300 3150
+Wire Wire Line
+	6300 3150 6300 2900
+Wire Wire Line
+	5150 3350 5400 3350
+Wire Wire Line
+	6200 3350 6450 3350
+Wire Wire Line
+	5400 3250 5350 3250
+Wire Wire Line
+	5350 3250 5350 3400
+Wire Wire Line
+	5400 3150 5350 3150
+Wire Wire Line
+	5350 3150 5350 2900
+Wire Wire Line
+	5350 2900 6300 2900
+Wire Wire Line
+	5250 3850 5400 3850
+$Comp
+L Device:R R?
+U 1 1 5ED0E3C0
+P 5950 4450
+AR Path="/5ED0E3C0" Ref="R?"  Part="1" 
+AR Path="/5ED01473/5ED0E3C0" Ref="R2"  Part="1" 
+F 0 "R2" H 5880 4404 50  0000 R CNN
+F 1 "4k7" H 5880 4495 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5880 4450 50  0001 C CNN
+F 3 "~" H 5950 4450 50  0001 C CNN
+	1    5950 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3850 5800 3850
+Wire Wire Line
+	6350 3850 6450 3850
+Wire Wire Line
+	6050 3850 5950 3850
+Connection ~ 5950 3850
+Wire Notes Line
+	5200 3700 6500 3700
+Wire Notes Line
+	6500 4100 5200 4100
+Text Notes 5250 3700 0    50   ~ 0
+UPDI
+$Comp
+L Device:R R?
+U 1 1 5ED0E3D1
+P 6200 3850
+AR Path="/5ED0E3D1" Ref="R?"  Part="1" 
+AR Path="/5ED01473/5ED0E3D1" Ref="R3"  Part="1" 
+F 0 "R3" V 6000 3850 50  0000 C CNN
+F 1 "4k7" V 6100 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6130 3850 50  0001 C CNN
+F 3 "~" H 6200 3850 50  0001 C CNN
+	1    6200 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED0E3D9
+P 6350 4900
+AR Path="/5ED0E3D9" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5ED0E3D9" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 6350 4650 50  0001 C CNN
+F 1 "GND" H 6355 4727 50  0000 C CNN
+F 2 "" H 6350 4900 50  0001 C CNN
+F 3 "" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED0E3DF
+P 5400 4600
+AR Path="/5ED0E3DF" Ref="R?"  Part="1" 
+AR Path="/5ED01473/5ED0E3DF" Ref="R1"  Part="1" 
+F 0 "R1" H 5330 4554 50  0000 R CNN
+F 1 "4k7" H 5330 4645 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5330 4600 50  0001 C CNN
+F 3 "~" H 5400 4600 50  0001 C CNN
+	1    5400 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5ED0E3E5
+P 5400 4350
+AR Path="/5ED0E3E5" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5ED0E3E5" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 5400 4200 50  0001 C CNN
+F 1 "VDD" H 5417 4523 50  0000 C CNN
+F 2 "" H 5400 4350 50  0001 C CNN
+F 3 "" H 5400 4350 50  0001 C CNN
+	1    5400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4350 5400 4450
+Wire Wire Line
+	5950 4200 5950 4300
+Connection ~ 5950 4200
+Wire Wire Line
+	6150 4900 6350 4900
+Wire Wire Line
+	5400 4900 5750 4900
+Wire Wire Line
+	5400 4750 5400 4900
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5ED0E3F3
+P 5600 4000
+AR Path="/5ED0E3F3" Ref="JP?"  Part="1" 
+AR Path="/5ED01473/5ED0E3F3" Ref="JP2"  Part="1" 
+F 0 "JP2" H 5600 4113 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5600 4114 50  0001 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 5600 4000 50  0001 C CNN
+F 3 "~" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6500 3700 6500 4100
+Wire Notes Line
+	5200 3700 5200 4100
+Wire Wire Line
+	5450 4000 5250 4000
+Wire Wire Line
+	5250 4000 5250 3850
+Wire Wire Line
+	5750 4000 5950 4000
+Wire Wire Line
+	5950 3850 5950 4000
+Wire Wire Line
+	5950 4000 5950 4200
+Connection ~ 5950 4000
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5ED0E402
+P 5950 4800
+AR Path="/5ED0E402" Ref="Q?"  Part="1" 
+AR Path="/5ED01473/5ED0E402" Ref="Q1"  Part="1" 
+F 0 "Q1" V 6185 4800 50  0000 C CNN
+F 1 "BC847" V 6276 4800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 4725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5950 4800 50  0001 L CNN
+	1    5950 4800
+	0    -1   1    0   
+$EndComp
+Text HLabel 6550 3350 2    50   Output ~ 0
+TD
+Wire Wire Line
+	6450 3350 6550 3350
+Connection ~ 6450 3350
+Wire Wire Line
+	6450 3350 6450 3850
+Connection ~ 6300 2900
+$Comp
+L power:VDD #PWR?
+U 1 1 5ED0E3A5
+P 6300 2900
+AR Path="/5ED0E3A5" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5ED0E3A5" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 6300 2750 50  0001 C CNN
+F 1 "VDD" H 6318 3073 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5ED0E3AB
+P 6450 2900
+AR Path="/5ED0E3AB" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5ED0E3AB" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6450 2750 50  0001 C CNN
+F 1 "VEE" H 6467 3073 50  0000 C CNN
+F 2 "" H 6450 2900 50  0001 C CNN
+F 3 "" H 6450 2900 50  0001 C CNN
+	1    6450 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 6550 4900 2    50   BiDi ~ 0
+GND
+Wire Wire Line
+	6550 4900 6350 4900
+Connection ~ 6350 4900
+Text HLabel 5150 3350 0    50   Input ~ 0
+TX
+Text HLabel 6550 3250 2    50   Input ~ 0
+Vee
+Text HLabel 6550 3150 2    50   Input ~ 0
+Vdd
+Wire Wire Line
+	6300 3150 6550 3150
+Connection ~ 6300 3150
+Wire Wire Line
+	6450 3250 6550 3250
+Connection ~ 6450 3250
+Text HLabel 6550 4200 2    50   Input ~ 0
+RD
+Wire Wire Line
+	5950 4200 6550 4200
+Text HLabel 5150 3850 0    50   BiDi ~ 0
+UPDI
+Wire Wire Line
+	5250 3850 5150 3850
+Connection ~ 5250 3850
+Text HLabel 5150 4900 0    50   Output ~ 0
+RX
+Wire Wire Line
+	5400 4900 5150 4900
+Connection ~ 5400 4900
+$EndSCHEMATC

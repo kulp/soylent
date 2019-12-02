@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+LIBS:soylent-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4700 3000 4700 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5ED3C46F
+P 4700 3000
+AR Path="/5ED3C46F" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C46F" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4700 2750 50  0001 C CNN
+F 1 "GND" H 4705 2827 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2900 4700 2900
+$Comp
+L Device:R R?
+U 1 1 5ED3C476
+P 5700 2900
+AR Path="/5ED3C476" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5ED3C476" Ref="R5"  Part="1" 
+F 0 "R5" V 5815 2900 50  0000 C CNN
+F 1 "50k" V 5700 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 2900 50  0001 C CNN
+F 3 "~" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5ED3C47C
+P 5700 4000
+AR Path="/5ED3C47C" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C47C" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5700 3850 50  0001 C CNN
+F 1 "VEE" H 5717 4173 50  0000 C CNN
+F 2 "" H 5700 4000 50  0001 C CNN
+F 3 "" H 5700 4000 50  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3500 4800 3500
+Wire Wire Line
+	5400 3600 5450 3600
+$Comp
+L power:VEE #PWR?
+U 1 1 5ED3C484
+P 5200 3800
+AR Path="/5ED3C484" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C484" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5200 3650 50  0001 C CNN
+F 1 "VEE" H 5300 3900 50  0000 C CNN
+F 2 "" H 5200 3800 50  0001 C CNN
+F 3 "" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TLV6001DCK U?
+U 1 1 5ED3C48A
+P 5200 3500
+AR Path="/5ED3C48A" Ref="U?"  Part="1" 
+AR Path="/5ED35417/5ED3C48A" Ref="U5"  Part="1" 
+F 0 "U5" H 5600 3650 50  0000 C CNN
+F 1 "TLV6001DCK" H 5550 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 5400 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv6001.pdf" H 5200 3500 50  0001 C CNN
+	1    5200 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5ED3C490
+P 5200 3200
+AR Path="/5ED3C490" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C490" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 5200 3050 50  0001 C CNN
+F 1 "VDD" H 5100 3300 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED3C496
+P 6700 4400
+AR Path="/5ED3C496" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5ED3C496" Ref="R7"  Part="1" 
+F 0 "R7" H 6770 4446 50  0000 L CNN
+F 1 "100R" H 6770 4355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6630 4400 50  0001 C CNN
+F 3 "~" H 6700 4400 50  0001 C CNN
+	1    6700 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 4600 2750 0    50   ~ 0
+Level shifter
+$Comp
+L Device:R R?
+U 1 1 5ED3C49D
+P 5200 2900
+AR Path="/5ED3C49D" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5ED3C49D" Ref="R4"  Part="1" 
+F 0 "R4" V 5300 2900 50  0000 C CNN
+F 1 "50k" V 5200 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 2900 50  0001 C CNN
+F 3 "~" H 5200 2900 50  0001 C CNN
+	1    5200 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4000 5700 4100
+Wire Wire Line
+	5350 2900 5450 2900
+Wire Wire Line
+	5400 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 2900
+Connection ~ 5450 2900
+Wire Wire Line
+	5450 2900 5550 2900
+Wire Notes Line
+	4550 2750 4550 4300
+Wire Notes Line
+	5900 2750 5900 4300
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5ED3C4AD
+P 6600 4050
+AR Path="/5ED3C4AD" Ref="Q?"  Part="1" 
+AR Path="/5ED35417/5ED3C4AD" Ref="Q2"  Part="1" 
+F 0 "Q2" H 6791 4096 50  0000 L CNN
+F 1 "BC847" H 6791 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6800 3975 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6600 4050 50  0001 L CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5ED3C4B3
+P 5450 4100
+AR Path="/5ED3C4B3" Ref="RV?"  Part="1" 
+AR Path="/5ED35417/5ED3C4B3" Ref="RV1"  Part="1" 
+F 0 "RV1" V 5335 4100 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5244 4100 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical" H 5450 4100 50  0001 C CNN
+F 3 "~" H 5450 4100 50  0001 C CNN
+	1    5450 4100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4600 4100 4450 4100
+Wire Wire Line
+	4600 4100 4600 3500
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4100 5300 4100
+Wire Wire Line
+	5600 4100 5700 4100
+Wire Wire Line
+	5450 3950 5450 3600
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5ED3C4BF
+P 6300 3400
+AR Path="/5ED3C4BF" Ref="J?"  Part="1" 
+AR Path="/5ED35417/5ED3C4BF" Ref="J4"  Part="1" 
+F 0 "J4" H 6350 3717 50  0000 C CNN
+F 1 "ACST CPLR" H 6350 3626 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03_Pitch2.54mm" H 6300 3400 50  0001 C CNN
+F 3 "~" H 6300 3400 50  0001 C CNN
+	1    6300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED3C4C5
+P 6100 3500
+AR Path="/5ED3C4C5" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C4C5" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 6100 3250 50  0001 C CNN
+F 1 "GND" H 6105 3327 50  0000 C CNN
+F 2 "" H 6100 3500 50  0001 C CNN
+F 3 "" H 6100 3500 50  0001 C CNN
+	1    6100 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 3300
+Wire Wire Line
+	5850 2900 6800 2900
+Wire Wire Line
+	6600 3400 6700 3400
+Wire Wire Line
+	6700 3400 6700 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5ED3C4CF
+P 6700 4550
+AR Path="/5ED3C4CF" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C4CF" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 6700 4300 50  0001 C CNN
+F 1 "GND" H 6705 4377 50  0000 C CNN
+F 2 "" H 6700 4550 50  0001 C CNN
+F 3 "" H 6700 4550 50  0001 C CNN
+	1    6700 4550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4550 4300 5900 4300
+Wire Notes Line
+	5900 2750 4550 2750
+$Comp
+L Device:R R?
+U 1 1 5ED3C4D9
+P 6000 4550
+AR Path="/5ED3C4D9" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5ED3C4D9" Ref="R6"  Part="1" 
+F 0 "R6" V 5793 4550 50  0000 C CNN
+F 1 "100R" V 5884 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5930 4550 50  0001 C CNN
+F 3 "~" H 6000 4550 50  0001 C CNN
+	1    6000 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED3C4DF
+P 6250 4850
+AR Path="/5ED3C4DF" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C4DF" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 6250 4600 50  0001 C CNN
+F 1 "GND" H 6255 4677 50  0000 C CNN
+F 2 "" H 6250 4850 50  0001 C CNN
+F 3 "" H 6250 4850 50  0001 C CNN
+	1    6250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4550 6250 4550
+Connection ~ 6250 4550
+Wire Wire Line
+	6250 4550 6400 4550
+$Comp
+L Device:C C?
+U 1 1 5ED3C4E8
+P 6250 4700
+AR Path="/5ED3C4E8" Ref="C?"  Part="1" 
+AR Path="/5ED35417/5ED3C4E8" Ref="C3"  Part="1" 
+F 0 "C3" H 6365 4746 50  0000 L CNN
+F 1 ".1u" H 6365 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6288 4550 50  0001 C CNN
+F 3 "~" H 6250 4700 50  0001 C CNN
+	1    6250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4550 6400 4050
+Wire Wire Line
+	6800 3500 6600 3500
+Wire Wire Line
+	6800 2900 6800 3500
+Wire Wire Line
+	6000 3750 6000 3400
+Wire Wire Line
+	6000 3400 6100 3400
+Wire Wire Line
+	4450 4550 5850 4550
+Text HLabel 4450 4100 0    50   Output ~ 0
+WIN
+Text HLabel 4450 4550 0    50   Input ~ 0
+WOUT
+Text HLabel 4450 2900 0    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	4700 2900 4450 2900
+Connection ~ 4700 2900
+Wire Wire Line
+	6600 3300 6950 3300
+Wire Wire Line
+	6000 3750 6950 3750
+Text HLabel 6950 3300 2    50   Output ~ 0
++VDC
+Text HLabel 6950 3750 2    50   Output ~ 0
+-VDC
+Wire Wire Line
+	5700 4100 5700 4400
+Wire Wire Line
+	5700 4400 4450 4400
+Connection ~ 5700 4100
+Text HLabel 4450 4400 0    50   Input ~ 0
+Vee
+$EndSCHEMATC

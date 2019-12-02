@@ -47,25 +47,10 @@ F 3 "" H 2850 2900 50  0001 C CNN
 	1    2850 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:DB9_Female J1
-U 1 1 5DDD001B
-P 9200 3800
-F 0 "J1" H 9380 3846 50  0000 L CNN
-F 1 "DB9_Female" H 9380 3755 50  0000 L CNN
-F 2 "Conectors-Dsub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 9200 3800 50  0001 C CNN
-F 3 " ~" H 9200 3800 50  0001 C CNN
-	1    9200 3800
-	1    0    0    -1  
-$EndComp
 Text Label 8650 3600 0    50   ~ 0
 TD
-Text Label 8650 3800 0    50   ~ 0
+Text Label 8650 3700 0    50   ~ 0
 RD
-NoConn ~ 8900 4100
-NoConn ~ 8900 3400
-NoConn ~ 8900 3500
-NoConn ~ 8900 3900
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5DDC8FE2
@@ -160,20 +145,20 @@ Breakout
 $Comp
 L power:GND #PWR0106
 U 1 1 5DE0A274
-P 8600 4350
-F 0 "#PWR0106" H 8600 4100 50  0001 C CNN
-F 1 "GND" H 8605 4177 50  0000 C CNN
-F 2 "" H 8600 4350 50  0001 C CNN
-F 3 "" H 8600 4350 50  0001 C CNN
-	1    8600 4350
+P 8600 3900
+F 0 "#PWR0106" H 8600 3650 50  0001 C CNN
+F 1 "GND" H 8605 3727 50  0000 C CNN
+F 2 "" H 8600 3900 50  0001 C CNN
+F 3 "" H 8600 3900 50  0001 C CNN
+	1    8600 3900
 	1    0    0    -1  
 $EndComp
-Text Label 8650 4200 0    50   ~ 0
+Text Label 8650 3800 0    50   ~ 0
 GND
 Wire Wire Line
-	8900 4200 8600 4200
+	8900 3800 8600 3800
 Wire Wire Line
-	8600 4200 8600 4350
+	8600 3800 8600 3900
 Wire Wire Line
 	8050 3600 8900 3600
 $Comp
@@ -418,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2450 6850 3900
 Wire Wire Line
-	8150 3800 8900 3800
+	8150 3700 8900 3700
 $Comp
 L Device:R R3
 U 1 1 5E4D4F50
@@ -442,7 +427,7 @@ Connection ~ 7650 2950
 Connection ~ 8150 2950
 Connection ~ 8000 2000
 Wire Wire Line
-	8150 2950 8150 3800
+	8150 2950 8150 3700
 Wire Notes Line
 	6900 2800 8200 2800
 Wire Notes Line
@@ -825,8 +810,6 @@ Wire Wire Line
 	5800 1650 5800 1800
 Wire Wire Line
 	5800 1800 5900 1800
-NoConn ~ 8900 4000
-NoConn ~ 8900 3700
 $Comp
 L Regulator_Linear:LT1761-5 U2
 U 1 1 5EB7E246
@@ -908,4 +891,15 @@ Wire Wire Line
 	6650 4600 6500 4600
 Wire Wire Line
 	6650 4600 6650 4700
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5ECAB94C
+P 9100 3700
+F 0 "J1" H 9018 3375 50  0000 C CNN
+F 1 "Conn_01x03" H 9018 3466 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9100 3700 50  0001 C CNN
+F 3 "~" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

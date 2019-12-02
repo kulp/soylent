@@ -152,7 +152,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5DE1D062)
-    (at 236.2708 46.5046 270)
+    (at 190.6778 51.0766 270)
     (descr "Through hole straight pin header, 2x01, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x01 2.54mm double row")
     (path /5E09C5A1)
@@ -448,7 +448,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer F.Cu) (tedit 5A02FF57) (tstamp 5DE378BE)
-    (at 230.4034 47.244 90)
+    (at 184.8104 51.816 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /5E97D704)
@@ -604,7 +604,7 @@
   )
 
   (module Jumpers:SMT-JUMPER_2_NO_SILK (layer B.Cu) (tedit 200000) (tstamp 5DE1C809)
-    (at 233.3578 47.7796 270)
+    (at 187.7648 52.3516 270)
     (path /5E67EC72)
     (attr smd)
     (fp_text reference JP4 (at 0 1.524 270) (layer B.SilkS)
@@ -628,7 +628,7 @@
   )
 
   (module MAX3188:MAX3188EEUT&plus_T (layer F.Cu) (tedit 0) (tstamp 5DE1D588)
-    (at 240.533 43.5768 270)
+    (at 194.94 48.1488 270)
     (path /5E3F669C)
     (fp_text reference U4 (at -2.6828 1.3412 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -721,7 +721,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5DE1AE09)
-    (at 240.538 47.5804)
+    (at 194.945 52.1524)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5E4D4F50)
@@ -757,7 +757,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5DE1D38C)
-    (at 240.538 39.5732)
+    (at 194.945 44.1452)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5E5E321A)
@@ -793,7 +793,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer F.Cu) (tedit 5A02FF57) (tstamp 5DE1ADD1)
-    (at 236.2708 42.3672 180)
+    (at 190.6778 46.9392 180)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /5E47F15A)
@@ -987,7 +987,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5DE2CCF4)
-    (at 230.4034 44.45)
+    (at 184.8104 49.022)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5E15CC34)
@@ -1023,7 +1023,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5DDEC24A)
-    (at 230.4034 50.038)
+    (at 184.8104 54.61)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5DFEE336)
@@ -1059,7 +1059,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5DDEB94D)
-    (at 227.3554 47.244 90)
+    (at 181.7624 51.816 90)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5DFD8224)
@@ -1095,7 +1095,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5DE1AD9D)
-    (at 240.538 50.1396)
+    (at 194.945 54.7116)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5DDD4708)
@@ -1130,8 +1130,8 @@
     )
   )
 
-  (module Conectors-Dsub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm (layer F.Cu) (tedit 59F2C3AB) (tstamp 5DE1A862)
-    (at 244.7672 54.356)
+  (module Conectors-Dsub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm locked (layer F.Cu) (tedit 59F2C3AB) (tstamp 5DE1A862)
+    (at 244.221 44.323)
     (descr "9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.77x2.84mm, pin-PCB-offset 4.9399999999999995mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 7.4799999999999995mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
     (tags "9-pin D-Sub connector horizontal angled 90deg THT female pitch 2.77x2.84mm pin-PCB-offset 4.9399999999999995mm mounting-holes-distance 25mm mounting-hole-offset 25mm")
     (path /5DDD001B)

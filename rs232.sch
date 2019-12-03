@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -35,7 +35,7 @@ AR Path="/5ED0E399" Ref="JP?"  Part="1"
 AR Path="/5ED01473/5ED0E399" Ref="JP1"  Part="1" 
 F 0 "JP1" H 5600 3953 50  0000 C CNN
 F 1 "Jumper_2_Bridged" H 5600 3954 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 5600 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5600 3850 50  0001 C CNN
 F 3 "~" H 5600 3850 50  0001 C CNN
 	1    5600 3850
 	1    0    0    -1  
@@ -75,8 +75,6 @@ Wire Wire Line
 	5350 3150 5350 2900
 Wire Wire Line
 	5350 2900 6300 2900
-Wire Wire Line
-	5250 3850 5400 3850
 $Comp
 L Device:R R?
 U 1 1 5ED0E3C0
@@ -166,34 +164,10 @@ Wire Wire Line
 	5400 4900 5750 4900
 Wire Wire Line
 	5400 4750 5400 4900
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5ED0E3F3
-P 5600 4000
-AR Path="/5ED0E3F3" Ref="JP?"  Part="1" 
-AR Path="/5ED01473/5ED0E3F3" Ref="JP2"  Part="1" 
-F 0 "JP2" H 5600 4113 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5600 4114 50  0001 C CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 5600 4000 50  0001 C CNN
-F 3 "~" H 5600 4000 50  0001 C CNN
-	1    5600 4000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	6500 3700 6500 4100
 Wire Notes Line
 	5200 3700 5200 4100
-Wire Wire Line
-	5450 4000 5250 4000
-Wire Wire Line
-	5250 4000 5250 3850
-Wire Wire Line
-	5750 4000 5950 4000
-Wire Wire Line
-	5950 3850 5950 4000
-Wire Wire Line
-	5950 4000 5950 4200
-Connection ~ 5950 4000
 $Comp
 L Transistor_BJT:BC847 Q?
 U 1 1 5ED0E402
@@ -264,12 +238,13 @@ Wire Wire Line
 	5950 4200 6550 4200
 Text HLabel 5150 3850 0    50   BiDi ~ 0
 UPDI
-Wire Wire Line
-	5250 3850 5150 3850
-Connection ~ 5250 3850
 Text HLabel 5150 4900 0    50   Output ~ 0
 RX
 Wire Wire Line
 	5400 4900 5150 4900
 Connection ~ 5400 4900
+Wire Wire Line
+	5950 3850 5950 4200
+Wire Wire Line
+	5150 3850 5400 3850
 $EndSCHEMATC

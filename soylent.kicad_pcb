@@ -30,6 +30,9 @@
 
   (setup
     (last_trace_width 0.254)
+    (user_trace_width 0.1524)
+    (user_trace_width 0.2032)
+    (user_trace_width 0.254)
     (user_trace_width 0.5)
     (trace_clearance 0.2032)
     (zone_clearance 0.254)
@@ -125,7 +128,6 @@
     (add_net /RD)
     (add_net /RX)
     (add_net /TD)
-    (add_net "/TTY interface/-VDC")
     (add_net /TX)
     (add_net /UPDI)
     (add_net /WIN)

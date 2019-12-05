@@ -284,8 +284,6 @@ Text HLabel 6950 3300 2    50   Output ~ 0
 +VDC
 Text HLabel 6950 3750 2    50   Output ~ 0
 -VDC
-Wire Wire Line
-	5700 4400 4450 4400
 Text HLabel 4450 4400 0    50   Input ~ 0
 Vee
 Wire Wire Line
@@ -295,8 +293,8 @@ L Device:R R?
 U 1 1 5DE8C764
 P 5650 4100
 AR Path="/5DE8C764" Ref="R?"  Part="1" 
-AR Path="/5ED35417/5DE8C764" Ref="R?"  Part="1" 
-F 0 "R?" V 5765 4100 50  0000 C CNN
+AR Path="/5ED35417/5DE8C764" Ref="R9"  Part="1" 
+F 0 "R9" V 5765 4100 50  0000 C CNN
 F 1 "50k" V 5650 4100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4100 50  0001 C CNN
 F 3 "~" H 5650 4100 50  0001 C CNN
@@ -308,8 +306,8 @@ L Device:R R?
 U 1 1 5DE8C76A
 P 5200 4100
 AR Path="/5DE8C76A" Ref="R?"  Part="1" 
-AR Path="/5ED35417/5DE8C76A" Ref="R?"  Part="1" 
-F 0 "R?" V 5300 4100 50  0000 C CNN
+AR Path="/5ED35417/5DE8C76A" Ref="R8"  Part="1" 
+F 0 "R8" V 5300 4100 50  0000 C CNN
 F 1 "50k" V 5200 4100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 4100 50  0001 C CNN
 F 3 "~" H 5200 4100 50  0001 C CNN
@@ -323,4 +321,9 @@ Wire Wire Line
 Connection ~ 5450 4100
 Wire Wire Line
 	5450 4100 5500 4100
+Wire Wire Line
+	5800 4400 5800 4100
+Wire Wire Line
+	4450 4400 5800 4400
+Connection ~ 5800 4100
 $EndSCHEMATC

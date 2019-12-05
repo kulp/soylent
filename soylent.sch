@@ -36,10 +36,6 @@ F 3 "" H 2850 2900 50  0001 C CNN
 	1    2850 2900
 	1    0    0    -1  
 $EndComp
-Text Label 6850 3900 0    50   ~ 0
-TD
-Text Label 6850 4000 0    50   ~ 0
-RD
 Text Label 3500 3500 0    50   ~ 0
 UPDI
 $Comp
@@ -65,8 +61,6 @@ Text Label 3500 3700 0    50   ~ 0
 WOUT
 Text Label 3500 3800 0    50   ~ 0
 PA3
-Text Label 3500 3900 0    50   ~ 0
-TX
 Text Label 3500 4000 0    50   ~ 0
 RX
 $Comp
@@ -265,20 +259,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 3900 6650 3900
 $Sheet
-S 6100 3600 550  650 
-U 5ED01473
-F0 "RS-232 level conversion" 50
-F1 "rs232.sch" 50
-F2 "TD" O R 6650 3900 50 
-F3 "GND" B R 6650 4100 50 
-F4 "TX" I L 6100 3900 50 
-F5 "Vee" I R 6650 3650 50 
-F6 "Vdd" I R 6650 3750 50 
-F7 "RD" I R 6650 4000 50 
-F8 "UPDI" B L 6100 4150 50 
-F9 "RX" O L 6100 4000 50 
-$EndSheet
-$Sheet
 S 6100 2900 550  300 
 U 5ECDCFC2
 F0 "Power Regulation" 50
@@ -295,4 +275,24 @@ Wire Wire Line
 Wire Wire Line
 	6000 3550 5800 3550
 Connection ~ 5800 3550
+Text Label 3500 3900 0    50   ~ 0
+TX
+Text Label 6850 3900 0    50   ~ 0
+TD
+Text Label 6850 4000 0    50   ~ 0
+RD
+$Sheet
+S 6100 3600 550  650 
+U 5ED01473
+F0 "RS-232 level conversion" 50
+F1 "rs232.sch" 50
+F2 "TD" O R 6650 3900 50 
+F3 "GND" B R 6650 4100 50 
+F4 "TX" I L 6100 3900 50 
+F5 "Vee" I R 6650 3650 50 
+F6 "Vdd" I R 6650 3750 50 
+F7 "RD" I R 6650 4000 50 
+F8 "UPDI" B L 6100 4150 50 
+F9 "RX" O L 6100 4000 50 
+$EndSheet
 $EndSCHEMATC

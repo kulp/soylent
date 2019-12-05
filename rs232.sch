@@ -15,203 +15,164 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR?
-U 1 1 5ED0E38F
-P 5350 3400
-AR Path="/5ED0E38F" Ref="#PWR?"  Part="1" 
-AR Path="/5ED01473/5ED0E38F" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 5350 3150 50  0001 C CNN
-F 1 "GND" H 5355 3227 50  0000 C CNN
-F 2 "" H 5350 3400 50  0001 C CNN
-F 3 "" H 5350 3400 50  0001 C CNN
-	1    5350 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:Jumper_2_Bridged JP?
 U 1 1 5ED0E399
-P 5650 4050
+P 5900 3000
 AR Path="/5ED0E399" Ref="JP?"  Part="1" 
 AR Path="/5ED01473/5ED0E399" Ref="JP1"  Part="1" 
-F 0 "JP1" H 5650 4153 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 5650 4154 50  0001 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5650 4050 50  0001 C CNN
-F 3 "~" H 5650 4050 50  0001 C CNN
-	1    5650 4050
+F 0 "JP1" H 5900 3103 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 5900 3104 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5900 3000 50  0001 C CNN
+F 3 "~" H 5900 3000 50  0001 C CNN
+	1    5900 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L MAX3188:MAX3188EEUT+T U?
-U 1 1 5ED0E39F
-P 5200 3150
-AR Path="/5ED0E39F" Ref="U?"  Part="1" 
-AR Path="/5ED01473/5ED0E39F" Ref="U4"  Part="1" 
-F 0 "U4" H 5800 3550 60  0000 C CNN
-F 1 "MAX3188EEUT+T" H 5800 3450 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6400 3390 60  0001 C CNN
-F 3 "" H 5200 3150 60  0000 C CNN
-	1    5200 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3250 6500 3250
-Wire Wire Line
-	6500 3250 6500 2900
-Wire Wire Line
-	6200 3150 6300 3150
-Wire Wire Line
-	6300 3150 6300 2900
-Wire Wire Line
-	5150 3350 5400 3350
-Wire Wire Line
-	5400 3250 5350 3250
-Wire Wire Line
-	5350 3250 5350 3400
-Wire Wire Line
-	5400 3150 5350 3150
-Wire Wire Line
-	5350 3150 5350 2900
-Wire Wire Line
-	5350 2900 6300 2900
 Wire Notes Line
-	5250 3700 6550 3700
+	5500 3350 6800 3350
 Wire Notes Line
-	6550 4150 5250 4150
-Text Notes 5300 3700 0    50   ~ 0
+	6800 2900 5500 2900
+Text Notes 5550 3350 0    50   ~ 0
 UPDI
-Text HLabel 6600 3350 2    50   Output ~ 0
+Text HLabel 6900 3300 2    50   Output ~ 0
 TD
-Connection ~ 6300 2900
 $Comp
 L power:VDD #PWR?
 U 1 1 5ED0E3A5
-P 6300 2900
+P 6550 3700
 AR Path="/5ED0E3A5" Ref="#PWR?"  Part="1" 
 AR Path="/5ED01473/5ED0E3A5" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 6300 2750 50  0001 C CNN
-F 1 "VDD" H 6318 3073 50  0000 C CNN
-F 2 "" H 6300 2900 50  0001 C CNN
-F 3 "" H 6300 2900 50  0001 C CNN
-	1    6300 2900
+F 0 "#PWR0114" H 6550 3550 50  0001 C CNN
+F 1 "VDD" H 6568 3873 50  0000 C CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "" H 6550 3700 50  0001 C CNN
+	1    6550 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VEE #PWR?
 U 1 1 5ED0E3AB
-P 6500 2900
+P 6550 4350
 AR Path="/5ED0E3AB" Ref="#PWR?"  Part="1" 
 AR Path="/5ED01473/5ED0E3AB" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 6500 2750 50  0001 C CNN
-F 1 "VEE" H 6517 3073 50  0000 C CNN
-F 2 "" H 6500 2900 50  0001 C CNN
-F 3 "" H 6500 2900 50  0001 C CNN
-	1    6500 2900
+F 0 "#PWR0115" H 6550 4200 50  0001 C CNN
+F 1 "VEE" H 6567 4523 50  0000 C CNN
+F 2 "" H 6550 4350 50  0001 C CNN
+F 3 "" H 6550 4350 50  0001 C CNN
+	1    6550 4350
 	1    0    0    -1  
 $EndComp
-Text HLabel 5150 3350 0    50   Input ~ 0
+Text HLabel 4500 4050 0    50   Input ~ 0
 TX
-Text HLabel 6600 3250 2    50   Input ~ 0
+Text HLabel 6900 4450 2    50   Input ~ 0
 Vee
-Text HLabel 6600 3150 2    50   Input ~ 0
-Vdd
-Wire Wire Line
-	6300 3150 6600 3150
-Connection ~ 6300 3150
-Wire Wire Line
-	6500 3250 6600 3250
-Connection ~ 6500 3250
-Text HLabel 6600 4750 2    50   Input ~ 0
+Text HLabel 6900 3000 2    50   Input ~ 0
 RD
-Text HLabel 5200 4050 0    50   BiDi ~ 0
+Text HLabel 5450 3000 0    50   BiDi ~ 0
 UPDI
-Text HLabel 5150 4650 0    50   Output ~ 0
+Text HLabel 4500 3900 0    50   Output ~ 0
 RX
 Wire Wire Line
-	5200 4050 5450 4050
-$Comp
-L MAX3180:MAX3180EUK+T U6
-U 1 1 5DF24D13
-P 6400 4650
-F 0 "U6" H 7000 5037 60  0000 C CNN
-F 1 "MAX3180EUK+T" H 7000 4931 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 7200 4890 60  0001 C CNN
-F 3 "" H 6400 4650 60  0000 C CNN
-	1    6400 4650
-	-1   0    0    -1  
-$EndComp
+	5450 3000 5700 3000
 Wire Wire Line
-	6500 4650 6500 4950
-$Comp
-L power:VDD #PWR?
-U 1 1 5DF2A05E
-P 6500 4550
-AR Path="/5DF2A05E" Ref="#PWR?"  Part="1" 
-AR Path="/5ED01473/5DF2A05E" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 6500 4400 50  0001 C CNN
-F 1 "VDD" H 6518 4723 50  0000 C CNN
-F 2 "" H 6500 4550 50  0001 C CNN
-F 3 "" H 6500 4550 50  0001 C CNN
-	1    6500 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 4650 6500 4550
-Connection ~ 6500 4650
-Wire Wire Line
-	6200 4650 6500 4650
-Wire Wire Line
-	6200 4950 6500 4950
-Wire Wire Line
-	5150 4650 5400 4650
-$Comp
-L Device:R R?
-U 1 1 5ED0E3D1
-P 6400 3900
-AR Path="/5ED0E3D1" Ref="R?"  Part="1" 
-AR Path="/5ED01473/5ED0E3D1" Ref="R3"  Part="1" 
-F 0 "R3" V 6200 3900 50  0000 C CNN
-F 1 "4k7" V 6300 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6330 3900 50  0001 C CNN
-F 3 "~" H 6400 3900 50  0001 C CNN
-	1    6400 3900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 3350 6400 3350
-Wire Wire Line
-	6400 3750 6400 3350
-Connection ~ 6400 3350
-Wire Wire Line
-	6400 3350 6600 3350
-Wire Wire Line
-	5850 4050 6400 4050
+	6100 3000 6650 3000
 Wire Notes Line
-	6550 3700 6550 4150
+	6800 3350 6800 2900
 Wire Notes Line
-	5250 3700 5250 4150
-Wire Wire Line
-	6600 4750 6400 4750
-Connection ~ 6400 4050
-Wire Wire Line
-	6400 4050 6400 4750
-Connection ~ 6400 4750
-Wire Wire Line
-	6400 4750 6200 4750
+	5500 3350 5500 2900
+Connection ~ 6650 3000
 $Comp
 L power:GND #PWR?
 U 1 1 5DF382A6
-P 5300 5000
+P 6550 4550
 AR Path="/5DF382A6" Ref="#PWR?"  Part="1" 
 AR Path="/5ED01473/5DF382A6" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 5300 4750 50  0001 C CNN
-F 1 "GND" H 5305 4827 50  0000 C CNN
-F 2 "" H 5300 5000 50  0001 C CNN
-F 3 "" H 5300 5000 50  0001 C CNN
-	1    5300 5000
+F 0 "#PWR0113" H 6550 4300 50  0001 C CNN
+F 1 "GND" H 6555 4377 50  0000 C CNN
+F 2 "" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX3314EEKA-T:MAX3314EEKA-T U4
+U 1 1 5DF544D0
+P 5600 4150
+F 0 "U4" H 5600 4820 50  0000 C CNN
+F 1 "MAX3314EEKA-T" H 5600 4729 50  0000 C CNN
+F 2 "SOT65P280X145-8N" H 5600 4150 50  0001 L BNN
+F 3 "Maxim Integrated" H 5600 4150 50  0001 L BNN
+F 4 "SOT-23-8 Maxim" H 5600 4150 50  0001 L BNN "Field4"
+F 5 "MAX3314EEKA+TCT-ND" H 5600 4150 50  0001 L BNN "Field5"
+F 6 "Single Transmitter/Receiver RS-232 8-Pin SOT-23 T/R" H 5600 4150 50  0001 L BNN "Field6"
+F 7 "https://www.digikey.com/product-detail/en/maxim-integrated/MAX3314EEKA-T/MAX3314EEKA-TCT-ND/5820996?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 5600 4150 50  0001 L BNN "Field7"
+F 8 "MAX3314EEKA+T" H 5600 4150 50  0001 L BNN "Field8"
+	1    5600 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 4850 5300 4850
+	6650 3000 6900 3000
 Wire Wire Line
-	5300 4850 5300 5000
+	6650 3300 6900 3300
+$Comp
+L Device:R R?
+U 1 1 5ED0E3D1
+P 6650 3150
+AR Path="/5ED0E3D1" Ref="R?"  Part="1" 
+AR Path="/5ED01473/5ED0E3D1" Ref="R3"  Part="1" 
+F 0 "R3" V 6450 3150 50  0000 C CNN
+F 1 "4k7" V 6550 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6580 3150 50  0001 C CNN
+F 3 "~" H 6650 3150 50  0001 C CNN
+	1    6650 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3300 6650 4050
+Wire Wire Line
+	6650 4050 6300 4050
+Connection ~ 6650 3300
+Wire Wire Line
+	6650 3000 6650 2800
+Wire Wire Line
+	6650 2800 4900 2800
+Wire Wire Line
+	4900 2800 4900 3950
+Wire Wire Line
+	6300 3950 6450 3950
+Wire Wire Line
+	6450 3950 6450 3400
+Wire Wire Line
+	6450 3400 4750 3400
+Wire Wire Line
+	4750 3400 4750 3900
+Wire Wire Line
+	4750 3900 4500 3900
+Wire Wire Line
+	4500 4050 4900 4050
+Wire Wire Line
+	6900 4450 6550 4450
+Wire Wire Line
+	6550 4350 6550 4450
+Connection ~ 6550 4450
+Wire Wire Line
+	6550 4450 6300 4450
+Wire Wire Line
+	6550 4550 6300 4550
+Wire Wire Line
+	6300 3750 6550 3750
+Wire Wire Line
+	6550 3750 6550 3700
+$Comp
+L power:VDD #PWR?
+U 1 1 5DF679F4
+P 4900 4250
+AR Path="/5DF679F4" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5DF679F4" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 4900 4100 50  0001 C CNN
+F 1 "VDD" H 4847 4287 50  0000 R CNN
+F 2 "" H 4900 4250 50  0001 C CNN
+F 3 "" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

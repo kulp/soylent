@@ -1155,10 +1155,10 @@
     )
   )
 
-  (gr_line (start 248.031 25.273) (end 248.031 46.863) (layer Edge.Cuts) (width 0.05) (tstamp 5DE9A99A))
-  (gr_line (start 230.251 46.863) (end 230.251 25.273) (layer Edge.Cuts) (width 0.05) (tstamp 5DE9A999))
+  (gr_line (start 248.031 24.003) (end 248.031 46.863) (layer Edge.Cuts) (width 0.05) (tstamp 5DE9A99A))
+  (gr_line (start 230.251 46.863) (end 230.251 24.003) (layer Edge.Cuts) (width 0.05) (tstamp 5DE9A999))
   (gr_line (start 230.251 46.863) (end 248.031 46.863) (layer Edge.Cuts) (width 0.05) (tstamp 5DE9A995))
-  (gr_line (start 230.251 25.273) (end 248.031 25.273) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 230.251 24.003) (end 248.031 24.003) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 234.696 37.338) (end 232.791 39.243) (width 0.2032) (layer F.Cu) (net 1) (status 20))
   (segment (start 235.966 37.338) (end 234.696 37.338) (width 0.2032) (layer F.Cu) (net 1) (status 10))
@@ -1358,7 +1358,7 @@
     (fill (arc_segments 32) (thermal_gap 0.2032) (thermal_bridge_width 0.254))
     (polygon
       (pts
-        (xy 230.251 25.273) (xy 248.031 25.273) (xy 248.031 46.863) (xy 230.251 46.863)
+        (xy 230.251 24.003) (xy 248.031 24.003) (xy 248.031 46.863) (xy 230.251 46.863)
       )
     )
   )
@@ -1368,7 +1368,7 @@
     (fill (arc_segments 32) (thermal_gap 0.2032) (thermal_bridge_width 0.254))
     (polygon
       (pts
-        (xy 230.251 25.273) (xy 248.031 25.273) (xy 248.031 46.863) (xy 230.251 46.863)
+        (xy 230.251 24.003) (xy 248.031 24.003) (xy 248.031 46.863) (xy 230.251 46.863)
       )
     )
   )

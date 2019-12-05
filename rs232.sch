@@ -30,14 +30,14 @@ $EndComp
 $Comp
 L Jumper:Jumper_2_Bridged JP?
 U 1 1 5ED0E399
-P 5600 3850
+P 5650 4050
 AR Path="/5ED0E399" Ref="JP?"  Part="1" 
 AR Path="/5ED01473/5ED0E399" Ref="JP1"  Part="1" 
-F 0 "JP1" H 5600 3953 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 5600 3954 50  0001 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5600 3850 50  0001 C CNN
-F 3 "~" H 5600 3850 50  0001 C CNN
-	1    5600 3850
+F 0 "JP1" H 5650 4153 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 5650 4154 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5650 4050 50  0001 C CNN
+F 3 "~" H 5650 4050 50  0001 C CNN
+	1    5650 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -48,23 +48,21 @@ AR Path="/5ED0E39F" Ref="U?"  Part="1"
 AR Path="/5ED01473/5ED0E39F" Ref="U4"  Part="1" 
 F 0 "U4" H 5800 3550 60  0000 C CNN
 F 1 "MAX3188EEUT+T" H 5800 3450 60  0000 C CNN
-F 2 "MAX3188:MAX3188EEUT&plus_T" H 6400 3390 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6400 3390 60  0001 C CNN
 F 3 "" H 5200 3150 60  0000 C CNN
 	1    5200 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 3250 6450 3250
+	6200 3250 6500 3250
 Wire Wire Line
-	6450 3250 6450 2900
+	6500 3250 6500 2900
 Wire Wire Line
 	6200 3150 6300 3150
 Wire Wire Line
 	6300 3150 6300 2900
 Wire Wire Line
 	5150 3350 5400 3350
-Wire Wire Line
-	6200 3350 6450 3350
 Wire Wire Line
 	5400 3250 5350 3250
 Wire Wire Line
@@ -75,119 +73,14 @@ Wire Wire Line
 	5350 3150 5350 2900
 Wire Wire Line
 	5350 2900 6300 2900
-$Comp
-L Device:R R?
-U 1 1 5ED0E3C0
-P 5950 4450
-AR Path="/5ED0E3C0" Ref="R?"  Part="1" 
-AR Path="/5ED01473/5ED0E3C0" Ref="R2"  Part="1" 
-F 0 "R2" H 5880 4404 50  0000 R CNN
-F 1 "4k7" H 5880 4495 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5880 4450 50  0001 C CNN
-F 3 "~" H 5950 4450 50  0001 C CNN
-	1    5950 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5950 3850 5800 3850
-Wire Wire Line
-	6350 3850 6450 3850
-Wire Wire Line
-	6050 3850 5950 3850
-Connection ~ 5950 3850
 Wire Notes Line
-	5200 3700 6500 3700
+	5250 3700 6550 3700
 Wire Notes Line
-	6500 4100 5200 4100
-Text Notes 5250 3700 0    50   ~ 0
+	6550 4150 5250 4150
+Text Notes 5300 3700 0    50   ~ 0
 UPDI
-$Comp
-L Device:R R?
-U 1 1 5ED0E3D1
-P 6200 3850
-AR Path="/5ED0E3D1" Ref="R?"  Part="1" 
-AR Path="/5ED01473/5ED0E3D1" Ref="R3"  Part="1" 
-F 0 "R3" V 6000 3850 50  0000 C CNN
-F 1 "4k7" V 6100 3850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6130 3850 50  0001 C CNN
-F 3 "~" H 6200 3850 50  0001 C CNN
-	1    6200 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5ED0E3D9
-P 6350 4900
-AR Path="/5ED0E3D9" Ref="#PWR?"  Part="1" 
-AR Path="/5ED01473/5ED0E3D9" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 6350 4650 50  0001 C CNN
-F 1 "GND" H 6355 4727 50  0000 C CNN
-F 2 "" H 6350 4900 50  0001 C CNN
-F 3 "" H 6350 4900 50  0001 C CNN
-	1    6350 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5ED0E3DF
-P 5400 4600
-AR Path="/5ED0E3DF" Ref="R?"  Part="1" 
-AR Path="/5ED01473/5ED0E3DF" Ref="R1"  Part="1" 
-F 0 "R1" H 5330 4554 50  0000 R CNN
-F 1 "4k7" H 5330 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5330 4600 50  0001 C CNN
-F 3 "~" H 5400 4600 50  0001 C CNN
-	1    5400 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 5ED0E3E5
-P 5400 4350
-AR Path="/5ED0E3E5" Ref="#PWR?"  Part="1" 
-AR Path="/5ED01473/5ED0E3E5" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 5400 4200 50  0001 C CNN
-F 1 "VDD" H 5417 4523 50  0000 C CNN
-F 2 "" H 5400 4350 50  0001 C CNN
-F 3 "" H 5400 4350 50  0001 C CNN
-	1    5400 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 4350 5400 4450
-Wire Wire Line
-	5950 4200 5950 4300
-Connection ~ 5950 4200
-Wire Wire Line
-	6150 4900 6350 4900
-Wire Wire Line
-	5400 4900 5750 4900
-Wire Wire Line
-	5400 4750 5400 4900
-Wire Notes Line
-	6500 3700 6500 4100
-Wire Notes Line
-	5200 3700 5200 4100
-$Comp
-L Transistor_BJT:BC847 Q?
-U 1 1 5ED0E402
-P 5950 4800
-AR Path="/5ED0E402" Ref="Q?"  Part="1" 
-AR Path="/5ED01473/5ED0E402" Ref="Q1"  Part="1" 
-F 0 "Q1" V 6185 4800 50  0000 C CNN
-F 1 "BC847" V 6276 4800 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 4725 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5950 4800 50  0001 L CNN
-	1    5950 4800
-	0    -1   1    0   
-$EndComp
-Text HLabel 6550 3350 2    50   Output ~ 0
+Text HLabel 6600 3350 2    50   Output ~ 0
 TD
-Wire Wire Line
-	6450 3350 6550 3350
-Connection ~ 6450 3350
-Wire Wire Line
-	6450 3350 6450 3850
 Connection ~ 6300 2900
 $Comp
 L power:VDD #PWR?
@@ -205,46 +98,120 @@ $EndComp
 $Comp
 L power:VEE #PWR?
 U 1 1 5ED0E3AB
-P 6450 2900
+P 6500 2900
 AR Path="/5ED0E3AB" Ref="#PWR?"  Part="1" 
 AR Path="/5ED01473/5ED0E3AB" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 6450 2750 50  0001 C CNN
-F 1 "VEE" H 6467 3073 50  0000 C CNN
-F 2 "" H 6450 2900 50  0001 C CNN
-F 3 "" H 6450 2900 50  0001 C CNN
-	1    6450 2900
+F 0 "#PWR0115" H 6500 2750 50  0001 C CNN
+F 1 "VEE" H 6517 3073 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "" H 6500 2900 50  0001 C CNN
+	1    6500 2900
 	1    0    0    -1  
 $EndComp
-Text HLabel 6550 4900 2    50   BiDi ~ 0
-GND
-Wire Wire Line
-	6550 4900 6350 4900
-Connection ~ 6350 4900
 Text HLabel 5150 3350 0    50   Input ~ 0
 TX
-Text HLabel 6550 3250 2    50   Input ~ 0
+Text HLabel 6600 3250 2    50   Input ~ 0
 Vee
-Text HLabel 6550 3150 2    50   Input ~ 0
+Text HLabel 6600 3150 2    50   Input ~ 0
 Vdd
 Wire Wire Line
-	6300 3150 6550 3150
+	6300 3150 6600 3150
 Connection ~ 6300 3150
 Wire Wire Line
-	6450 3250 6550 3250
-Connection ~ 6450 3250
-Text HLabel 6550 4200 2    50   Input ~ 0
+	6500 3250 6600 3250
+Connection ~ 6500 3250
+Text HLabel 6600 4750 2    50   Input ~ 0
 RD
-Wire Wire Line
-	5950 4200 6550 4200
-Text HLabel 5150 3850 0    50   BiDi ~ 0
+Text HLabel 5200 4050 0    50   BiDi ~ 0
 UPDI
-Text HLabel 5150 4900 0    50   Output ~ 0
+Text HLabel 5150 4650 0    50   Output ~ 0
 RX
 Wire Wire Line
-	5400 4900 5150 4900
-Connection ~ 5400 4900
+	5200 4050 5450 4050
+$Comp
+L MAX3180:MAX3180EUK+T U6
+U 1 1 5DF24D13
+P 6400 4650
+F 0 "U6" H 7000 5037 60  0000 C CNN
+F 1 "MAX3180EUK+T" H 7000 4931 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 7200 4890 60  0001 C CNN
+F 3 "" H 6400 4650 60  0000 C CNN
+	1    6400 4650
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	5950 3850 5950 4200
+	6500 4650 6500 4950
+$Comp
+L power:VDD #PWR?
+U 1 1 5DF2A05E
+P 6500 4550
+AR Path="/5DF2A05E" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5DF2A05E" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 6500 4400 50  0001 C CNN
+F 1 "VDD" H 6518 4723 50  0000 C CNN
+F 2 "" H 6500 4550 50  0001 C CNN
+F 3 "" H 6500 4550 50  0001 C CNN
+	1    6500 4550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5150 3850 5400 3850
+	6500 4650 6500 4550
+Connection ~ 6500 4650
+Wire Wire Line
+	6200 4650 6500 4650
+Wire Wire Line
+	6200 4950 6500 4950
+Wire Wire Line
+	5150 4650 5400 4650
+$Comp
+L Device:R R?
+U 1 1 5ED0E3D1
+P 6400 3900
+AR Path="/5ED0E3D1" Ref="R?"  Part="1" 
+AR Path="/5ED01473/5ED0E3D1" Ref="R3"  Part="1" 
+F 0 "R3" V 6200 3900 50  0000 C CNN
+F 1 "4k7" V 6300 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6330 3900 50  0001 C CNN
+F 3 "~" H 6400 3900 50  0001 C CNN
+	1    6400 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 3350 6400 3350
+Wire Wire Line
+	6400 3750 6400 3350
+Connection ~ 6400 3350
+Wire Wire Line
+	6400 3350 6600 3350
+Wire Wire Line
+	5850 4050 6400 4050
+Wire Notes Line
+	6550 3700 6550 4150
+Wire Notes Line
+	5250 3700 5250 4150
+Wire Wire Line
+	6600 4750 6400 4750
+Connection ~ 6400 4050
+Wire Wire Line
+	6400 4050 6400 4750
+Connection ~ 6400 4750
+Wire Wire Line
+	6400 4750 6200 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5DF382A6
+P 5300 5000
+AR Path="/5DF382A6" Ref="#PWR?"  Part="1" 
+AR Path="/5ED01473/5DF382A6" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 5300 4750 50  0001 C CNN
+F 1 "GND" H 5305 4827 50  0000 C CNN
+F 2 "" H 5300 5000 50  0001 C CNN
+F 3 "" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4850 5300 4850
+Wire Wire Line
+	5300 4850 5300 5000
 $EndSCHEMATC

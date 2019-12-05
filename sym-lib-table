@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MAX3188)(type Legacy)(uri ${KIPRJMOD}/libraries/ul_MAX3188EEUTT/KiCAD/2019-11-29_18-16-32/2019-11-29_18-16-32.lib)(options "")(descr ""))
+  (lib (name MAX3180)(type Legacy)(uri ${KIPRJMOD}/libraries/ul_MAX3180EUKT/KiCAD/2019-12-05_14-45-40/2019-12-05_14-45-40.lib)(options "")(descr ""))
 )

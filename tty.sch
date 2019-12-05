@@ -47,14 +47,14 @@ $EndComp
 $Comp
 L power:VEE #PWR?
 U 1 1 5ED3C47C
-P 5700 4000
+P 5800 4000
 AR Path="/5ED3C47C" Ref="#PWR?"  Part="1" 
 AR Path="/5ED35417/5ED3C47C" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 5700 3850 50  0001 C CNN
-F 1 "VEE" H 5717 4173 50  0000 C CNN
-F 2 "" H 5700 4000 50  0001 C CNN
-F 3 "" H 5700 4000 50  0001 C CNN
-	1    5700 4000
+F 0 "#PWR0108" H 5800 3850 50  0001 C CNN
+F 1 "VEE" H 5817 4173 50  0000 C CNN
+F 2 "" H 5800 4000 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -129,7 +129,7 @@ F 3 "~" H 5200 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 4000 5700 4100
+	5800 4000 5800 4100
 Wire Wire Line
 	5350 2900 5450 2900
 Wire Wire Line
@@ -156,30 +156,11 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    6600 4050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT_TRIM RV?
-U 1 1 5ED3C4B3
-P 5450 4100
-AR Path="/5ED3C4B3" Ref="RV?"  Part="1" 
-AR Path="/5ED35417/5ED3C4B3" Ref="RV1"  Part="1" 
-F 0 "RV1" V 5335 4100 50  0000 C CNN
-F 1 "R_POT_TRIM" V 5244 4100 50  0000 C CNN
-F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical" H 5450 4100 50  0001 C CNN
-F 3 "~" H 5450 4100 50  0001 C CNN
-	1    5450 4100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	4600 4100 4450 4100
 Wire Wire Line
 	4600 4100 4600 3500
 Connection ~ 4600 4100
-Wire Wire Line
-	4600 4100 5300 4100
-Wire Wire Line
-	5600 4100 5700 4100
-Wire Wire Line
-	5450 3950 5450 3600
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 5ED3C4BF
@@ -304,10 +285,42 @@ Text HLabel 6950 3300 2    50   Output ~ 0
 Text HLabel 6950 3750 2    50   Output ~ 0
 -VDC
 Wire Wire Line
-	5700 4100 5700 4400
-Wire Wire Line
 	5700 4400 4450 4400
-Connection ~ 5700 4100
 Text HLabel 4450 4400 0    50   Input ~ 0
 Vee
+Wire Wire Line
+	5050 4100 4600 4100
+$Comp
+L Device:R R?
+U 1 1 5DE8C764
+P 5650 4100
+AR Path="/5DE8C764" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5DE8C764" Ref="R?"  Part="1" 
+F 0 "R?" V 5765 4100 50  0000 C CNN
+F 1 "50k" V 5650 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4100 50  0001 C CNN
+F 3 "~" H 5650 4100 50  0001 C CNN
+	1    5650 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE8C76A
+P 5200 4100
+AR Path="/5DE8C76A" Ref="R?"  Part="1" 
+AR Path="/5ED35417/5DE8C76A" Ref="R?"  Part="1" 
+F 0 "R?" V 5300 4100 50  0000 C CNN
+F 1 "50k" V 5200 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 4100 5450 4100
+Wire Wire Line
+	5450 3600 5450 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	5450 4100 5500 4100
 $EndSCHEMATC

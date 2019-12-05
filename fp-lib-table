@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name MAX3188)(type KiCad)(uri ${KIPRJMOD}/libraries/ul_MAX3188EEUTT/KiCAD/2019-11-29_18-16-32/footprints.pretty)(options "")(descr ""))
   (lib (name MAX3180)(type KiCad)(uri ${KIPRJMOD}/libraries/ul_MAX3180EUKT/KiCAD/2019-12-05_14-41-23/footprints.pretty)(options "")(descr ""))
+  (lib (name MAX3314EEKA-T)(type Legacy)(uri ${KIPRJMOD}/libraries/MAX3314EEKA-T/MAX3314EEKA-T.mod)(options "")(descr ""))
 )

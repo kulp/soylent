@@ -203,6 +203,11 @@
       (net 3 VDD))
     (pad 1 smd rect (at -1.255 -0.975 270) (size 1.21 0.48) (layers F.Cu F.Paste F.Mask)
       (net 3 VDD))
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23-8.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SMD_Packages:SOIC-8-N locked (layer F.Cu) (tedit 0) (tstamp 5DDCB0D0)
@@ -240,10 +245,10 @@
       (net 6 /TX))
     (pad 1 smd rect (at -1.905 3.175 90) (size 0.508 1.143) (layers F.Cu F.Paste F.Mask)
       (net 3 VDD))
-    (model SMD_Packages.3dshapes/SOIC-8-N.wrl
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.5 0.38 0.5))
-      (rotate (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -398,7 +403,7 @@
       (net 19 "Net-(R11-Pad2)"))
     (pad 2 smd rect (at 1.1 0) (size 1.2 0.9) (layers B.Cu B.Paste B.Mask)
       (net 11 VEE))
-    (model ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -802,7 +807,7 @@
       (net 1 GND))
     (pad 6 thru_hole oval (at 2.54 5.08 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 21 "/TTY interface/AIN"))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_2x03_Pitch2.54mm.wrl
+    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1318,7 +1323,7 @@
   (segment (start 233.807 28.523) (end 235.547201 30.263201) (width 0.254) (layer B.Cu) (net 16) (status 10))
   (segment (start 238.8235 37.6555) (end 235.3945 41.0845) (width 0.2032) (layer F.Cu) (net 17))
   (segment (start 235.3945 41.0845) (end 235.3945 41.74) (width 0.2032) (layer F.Cu) (net 17) (status 20))
-  (via (at 240.6015 37.6555) (size 0.635) (drill 0.254) (layers F.Cu B.Cu) (net 17) (status 1000000))
+  (via (at 240.6015 37.6555) (size 0.635) (drill 0.254) (layers F.Cu B.Cu) (net 17))
   (segment (start 241.0517 37.6555) (end 240.6015 37.6555) (width 0.2032) (layer B.Cu) (net 17))
   (segment (start 242.1965 39.7285) (end 242.1965 38.8003) (width 0.2032) (layer B.Cu) (net 17) (status 10))
   (segment (start 240.6015 37.6555) (end 238.8235 37.6555) (width 0.2032) (layer F.Cu) (net 17))

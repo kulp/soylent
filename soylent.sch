@@ -52,8 +52,6 @@ $EndComp
 Text Label 6850 4100 0    50   ~ 0
 GND
 Wire Wire Line
-	7100 4100 6800 4100
-Wire Wire Line
 	6800 4100 6800 4200
 Text Label 3500 3600 0    50   ~ 0
 WIN
@@ -66,12 +64,12 @@ RX
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5ECAB94C
-P 7300 4000
-F 0 "J1" H 7218 3675 50  0000 C CNN
-F 1 "Conn_01x03" H 7218 3766 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7300 4000 50  0001 C CNN
-F 3 "~" H 7300 4000 50  0001 C CNN
-	1    7300 4000
+P 7450 4000
+F 0 "J1" H 7368 3675 50  0000 C CNN
+F 1 "Conn_01x03" H 7368 3766 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 7450 4000 50  0001 C CNN
+F 3 "~" H 7450 4000 50  0001 C CNN
+	1    7450 4000
 	1    0    0    1   
 $EndComp
 $Comp
@@ -295,4 +293,14 @@ F7 "RD" I R 6650 4000 50
 F8 "UPDI" B L 6100 4150 50 
 F9 "RX" O L 6100 4000 50 
 $EndSheet
+Wire Wire Line
+	7100 3900 7200 4000
+Wire Wire Line
+	7200 4000 7250 4000
+Wire Wire Line
+	7100 4000 7200 3900
+Wire Wire Line
+	7200 3900 7250 3900
+Wire Wire Line
+	6800 4100 7250 4100
 $EndSCHEMATC

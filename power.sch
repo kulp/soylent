@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -30,7 +30,7 @@ AR Path="/5ECE4C57" Ref="C?"  Part="1"
 AR Path="/5ECDCFC2/5ECE4C57" Ref="C6"  Part="1" 
 F 0 "C6" H 6986 3596 50  0000 R CNN
 F 1 "1u" H 6986 3505 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7138 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 3400 50  0001 C CNN
 F 3 "~" H 7100 3550 50  0001 C CNN
 	1    7100 3550
 	-1   0    0    -1  
@@ -48,7 +48,7 @@ AR Path="/5ECE4C60" Ref="C?"  Part="1"
 AR Path="/5ECDCFC2/5ECE4C60" Ref="C5"  Part="1" 
 F 0 "C5" H 5935 3404 50  0000 R CNN
 F 1 "0.01u" H 5935 3495 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 3300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6088 3300 50  0001 C CNN
 F 3 "~" H 6050 3450 50  0001 C CNN
 	1    6050 3450
 	1    0    0    1   
@@ -101,7 +101,7 @@ AR Path="/5ECE4C89" Ref="C?"  Part="1"
 AR Path="/5ECDCFC2/5ECE4C89" Ref="C2"  Part="1" 
 F 0 "C2" H 5186 3746 50  0000 R CNN
 F 1 "1u" H 5186 3655 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5338 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 3550 50  0001 C CNN
 F 3 "~" H 5300 3700 50  0001 C CNN
 	1    5300 3700
 	1    0    0    -1  
@@ -121,7 +121,7 @@ AR Path="/5ECE4C95" Ref="C?"  Part="1"
 AR Path="/5ECDCFC2/5ECE4C95" Ref="C1"  Part="1" 
 F 0 "C1" H 3835 3654 50  0000 R CNN
 F 1 "2.2u" H 3835 3745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3988 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 3550 50  0001 C CNN
 F 3 "~" H 3950 3700 50  0001 C CNN
 	1    3950 3700
 	-1   0    0    1   
@@ -174,7 +174,7 @@ AR Path="/5ECE4CB8" Ref="C?"  Part="1"
 AR Path="/5ECDCFC2/5ECE4CB8" Ref="C4"  Part="1" 
 F 0 "C4" H 5435 3654 50  0000 R CNN
 F 1 "2.2u" H 5435 3745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5588 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 3550 50  0001 C CNN
 F 3 "~" H 5550 3700 50  0001 C CNN
 	1    5550 3700
 	-1   0    0    1   

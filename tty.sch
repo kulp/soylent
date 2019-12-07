@@ -39,7 +39,7 @@ AR Path="/5ED3C476" Ref="R?"  Part="1"
 AR Path="/5ED35417/5ED3C476" Ref="R5"  Part="1" 
 F 0 "R5" V 5765 2900 50  0000 C CNN
 F 1 "50k" V 5650 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 2900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5580 2900 50  0001 C CNN
 F 3 "~" H 5650 2900 50  0001 C CNN
 	1    5650 2900
 	0    1    1    0   
@@ -97,7 +97,7 @@ AR Path="/5ED3C49D" Ref="R?"  Part="1"
 AR Path="/5ED35417/5ED3C49D" Ref="R4"  Part="1" 
 F 0 "R4" V 5350 2900 50  0000 C CNN
 F 1 "50k" V 5250 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5180 2900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5180 2900 50  0001 C CNN
 F 3 "~" H 5250 2900 50  0001 C CNN
 	1    5250 2900
 	0    1    1    0   
@@ -155,7 +155,7 @@ AR Path="/5DE8C764" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DE8C764" Ref="R9"  Part="1" 
 F 0 "R9" V 5765 4100 50  0000 C CNN
 F 1 "50k" V 5650 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5580 4100 50  0001 C CNN
 F 3 "~" H 5650 4100 50  0001 C CNN
 	1    5650 4100
 	0    1    1    0   
@@ -168,7 +168,7 @@ AR Path="/5DE8C76A" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DE8C76A" Ref="R8"  Part="1" 
 F 0 "R8" V 5350 4100 50  0000 C CNN
 F 1 "50k" V 5250 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5180 4100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5180 4100 50  0001 C CNN
 F 3 "~" H 5250 4100 50  0001 C CNN
 	1    5250 4100
 	0    1    1    0   
@@ -217,7 +217,7 @@ AR Path="/5DED1FD9" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DED1FD9" Ref="R6"  Part="1" 
 F 0 "R6" V 4900 4550 50  0000 C CNN
 F 1 "50k" V 4800 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4730 4550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 4550 50  0001 C CNN
 F 3 "~" H 4800 4550 50  0001 C CNN
 	1    4800 4550
 	0    1    1    0   
@@ -232,7 +232,7 @@ AR Path="/5DED96D4" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DED96D4" Ref="R10"  Part="1" 
 F 0 "R10" V 5315 4550 50  0000 C CNN
 F 1 "50k" V 5200 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 4550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5130 4550 50  0001 C CNN
 F 3 "~" H 5200 4550 50  0001 C CNN
 	1    5200 4550
 	0    1    1    0   
@@ -278,7 +278,7 @@ AR Path="/5DEE26E8" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DEE26E8" Ref="R7"  Part="1" 
 F 0 "R7" V 4900 5600 50  0000 C CNN
 F 1 "50k" V 4800 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4730 5600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 5600 50  0001 C CNN
 F 3 "~" H 4800 5600 50  0001 C CNN
 	1    4800 5600
 	0    1    1    0   
@@ -291,7 +291,7 @@ AR Path="/5DEE2DBD" Ref="R?"  Part="1"
 AR Path="/5ED35417/5DEE2DBD" Ref="R11"  Part="1" 
 F 0 "R11" V 5315 5600 50  0000 C CNN
 F 1 "50k" V 5200 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 5600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 5130 5600 50  0001 C CNN
 F 3 "~" H 5200 5600 50  0001 C CNN
 	1    5200 5600
 	0    1    1    0   

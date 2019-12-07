@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.2032)
+    (last_trace_width 0.254)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
@@ -133,6 +133,7 @@
     (add_net /RD)
     (add_net /RX)
     (add_net /TD)
+    (add_net "/TTY interface/-VDC")
     (add_net "/TTY interface/AIN")
     (add_net "/TTY interface/AOUT")
     (add_net /TX)
@@ -143,6 +144,7 @@
     (add_net "Net-(C2-Pad1)")
     (add_net "Net-(C2-Pad2)")
     (add_net "Net-(C5-Pad1)")
+    (add_net "Net-(J4-Pad1)")
     (add_net "Net-(R10-Pad2)")
     (add_net "Net-(R11-Pad2)")
     (add_net "Net-(R4-Pad1)")

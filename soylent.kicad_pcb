@@ -255,6 +255,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Horizontal.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 5DE592CA)
@@ -334,6 +339,11 @@
     (pad 3 thru_hole oval (at 0 5.08 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 4 /RD))
     (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_1x03_Pitch2.54mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

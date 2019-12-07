@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 185)
     (zones 0)
     (modules 24)
@@ -1141,6 +1141,9 @@
     )
   )
 
+  (gr_text "ACST\nCPLR" (at 233.85145 27.432 90) (layer F.SilkS) (tstamp 5DEBC255)
+    (effects (font (size 0.635 0.635) (thickness 0.1016)))
+  )
   (gr_text RS-232 (at 234.3785 44.6405 90) (layer F.SilkS)
     (effects (font (size 0.635 0.635) (thickness 0.1016)))
   )

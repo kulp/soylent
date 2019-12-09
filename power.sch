@@ -29,9 +29,9 @@ P 7100 3550
 AR Path="/5ECE4C57" Ref="C?"  Part="1" 
 AR Path="/5ECDCFC2/5ECE4C57" Ref="C6"  Part="1" 
 F 0 "C6" H 6986 3596 50  0000 R CNN
-F 1 "1u" H 6986 3505 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 3400 50  0001 C CNN
-F 3 "~" H 7100 3550 50  0001 C CNN
+F 1 "47u" H 6986 3505 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7138 3400 50  0001 C CNN
+F 3 "https://octopart.com/c3216x5r1e476m160ac-tdk-25947783?r=sp" H 7100 3550 50  0001 C CNN
 	1    7100 3550
 	-1   0    0    -1  
 $EndComp

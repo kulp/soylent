@@ -16,45 +16,21 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	5700 3200 5700 3300
-Wire Wire Line
-	6200 3600 6050 3600
-Wire Wire Line
-	6200 3400 6200 3600
-Wire Wire Line
-	7100 3700 6600 3700
 $Comp
 L Device:C C?
 U 1 1 5ECE4C57
-P 7100 3550
+P 7100 3700
 AR Path="/5ECE4C57" Ref="C?"  Part="1" 
 AR Path="/5ECDCFC2/5ECE4C57" Ref="C6"  Part="1" 
-F 0 "C6" H 6986 3596 50  0000 R CNN
-F 1 "47u" H 6986 3505 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7138 3400 50  0001 C CNN
-F 3 "https://octopart.com/c3216x5r1e476m160ac-tdk-25947783?r=sp" H 7100 3550 50  0001 C CNN
-	1    7100 3550
+F 0 "C6" H 6986 3746 50  0000 R CNN
+F 1 "47u" H 6986 3655 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7138 3550 50  0001 C CNN
+F 3 "https://octopart.com/c3216x5r1e476m160ac-tdk-25947783?r=sp" H 7100 3700 50  0001 C CNN
+	1    7100 3700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 3300 5700 3300
-Wire Wire Line
-	6200 3300 6050 3300
-Connection ~ 6050 3300
-$Comp
-L Device:C C?
-U 1 1 5ECE4C60
-P 6050 3450
-AR Path="/5ECE4C60" Ref="C?"  Part="1" 
-AR Path="/5ECDCFC2/5ECE4C60" Ref="C5"  Part="1" 
-F 0 "C5" H 5935 3404 50  0000 R CNN
-F 1 "0.01u" H 5935 3495 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6088 3300 50  0001 C CNN
-F 3 "~" H 6050 3450 50  0001 C CNN
-	1    6050 3450
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7100 3200 7100 3300
+	7100 3050 7100 3300
 Wire Wire Line
 	7100 3300 7000 3300
 Connection ~ 7100 3300
@@ -112,7 +88,7 @@ Wire Wire Line
 	4150 3500 3950 3500
 Connection ~ 3950 3500
 Wire Wire Line
-	3950 3200 3950 3500
+	3950 3050 3950 3500
 $Comp
 L Device:C C?
 U 1 1 5ECE4C95
@@ -166,6 +142,42 @@ Wire Wire Line
 Connection ~ 5550 4050
 Wire Wire Line
 	5550 4050 5550 4100
+Text HLabel 3950 3050 1    50   Output ~ 0
+-5V
+Text HLabel 5550 3050 1    50   Output ~ 0
++5V
+Wire Wire Line
+	5550 3200 5550 3050
+Wire Wire Line
+	6600 3700 6600 4050
+Wire Wire Line
+	6600 4050 5550 4050
+Text HLabel 5550 4100 3    50   BiDi ~ 0
+GND
+Text HLabel 7100 3050 1    50   Input ~ 0
++VDC
+Wire Wire Line
+	6600 4050 7100 4050
+Wire Wire Line
+	7100 4050 7100 3850
+Connection ~ 6600 4050
+Wire Wire Line
+	7100 3550 7100 3400
+Wire Wire Line
+	5700 3300 6200 3300
+$Comp
+L Device:C C?
+U 1 1 5ECE4C60
+P 5950 3400
+AR Path="/5ECE4C60" Ref="C?"  Part="1" 
+AR Path="/5ECDCFC2/5ECE4C60" Ref="C5"  Part="1" 
+F 0 "C5" V 5790 3400 50  0000 C CNN
+F 1 "0.01u" V 5699 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5988 3250 50  0001 C CNN
+F 3 "~" H 5950 3400 50  0001 C CNN
+	1    5950 3400
+	0    1    -1   0   
+$EndComp
 $Comp
 L Device:C C?
 U 1 1 5ECE4CB8
@@ -179,19 +191,11 @@ F 3 "~" H 5550 3700 50  0001 C CNN
 	1    5550 3700
 	-1   0    0    1   
 $EndComp
-Text HLabel 3950 3200 1    50   Output ~ 0
--5V
-Text HLabel 5550 3050 1    50   Output ~ 0
-+5V
 Wire Wire Line
-	5550 3200 5550 3050
+	6200 3400 6100 3400
 Wire Wire Line
-	6600 3700 6600 4050
+	5800 3400 5700 3400
 Wire Wire Line
-	6600 4050 5550 4050
-Connection ~ 6600 3700
-Text HLabel 5550 4100 3    50   BiDi ~ 0
-GND
-Text HLabel 7100 3200 1    50   Input ~ 0
-+VDC
+	5700 3400 5700 3300
+Connection ~ 5700 3300
 $EndSCHEMATC

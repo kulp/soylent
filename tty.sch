@@ -14,23 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4700 3000 4700 2900
-$Comp
-L power:GND #PWR?
-U 1 1 5ED3C46F
-P 4700 3000
-AR Path="/5ED3C46F" Ref="#PWR?"  Part="1" 
-AR Path="/5ED35417/5ED3C46F" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 4700 2750 50  0001 C CNN
-F 1 "GND" H 4705 2827 50  0000 C CNN
-F 2 "" H 4700 3000 50  0001 C CNN
-F 3 "" H 4700 3000 50  0001 C CNN
-	1    4700 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 2900 4700 2900
 $Comp
 L Device:R R?
 U 1 1 5ED3C476
@@ -44,49 +27,10 @@ F 3 "~" H 5650 2900 50  0001 C CNN
 	1    5650 2900
 	0    1    1    0   
 $EndComp
-$Comp
-L power:VEE #PWR?
-U 1 1 5ED3C47C
-P 5800 4000
-AR Path="/5ED3C47C" Ref="#PWR?"  Part="1" 
-AR Path="/5ED35417/5ED3C47C" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 5800 3850 50  0001 C CNN
-F 1 "VEE" H 5817 4173 50  0000 C CNN
-F 2 "" H 5800 4000 50  0001 C CNN
-F 3 "" H 5800 4000 50  0001 C CNN
-	1    5800 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 3500 4800 3500
 Wire Wire Line
 	5400 3600 5450 3600
-$Comp
-L power:VEE #PWR?
-U 1 1 5ED3C484
-P 5550 3800
-AR Path="/5ED3C484" Ref="#PWR?"  Part="1" 
-AR Path="/5ED35417/5ED3C484" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 5550 3650 50  0001 C CNN
-F 1 "VEE" H 5650 3900 50  0000 C CNN
-F 2 "" H 5550 3800 50  0001 C CNN
-F 3 "" H 5550 3800 50  0001 C CNN
-	1    5550 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 5ED3C490
-P 5550 3200
-AR Path="/5ED3C490" Ref="#PWR?"  Part="1" 
-AR Path="/5ED35417/5ED3C490" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 5550 3050 50  0001 C CNN
-F 1 "VDD" H 5450 3300 50  0000 C CNN
-F 2 "" H 5550 3200 50  0001 C CNN
-F 3 "" H 5550 3200 50  0001 C CNN
-	1    5550 3200
-	1    0    0    -1  
-$EndComp
 Text Notes 4600 2750 0    50   ~ 0
 Level shifter
 $Comp
@@ -102,8 +46,6 @@ F 3 "~" H 5250 2900 50  0001 C CNN
 	1    5250 2900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5800 4000 5800 4100
 Wire Wire Line
 	5400 2900 5450 2900
 Wire Wire Line
@@ -132,11 +74,6 @@ Text HLabel 4450 4100 0    50   Output ~ 0
 WIN
 Text HLabel 4450 4550 0    50   Input ~ 0
 WOUT
-Text HLabel 4450 2900 0    50   UnSpc ~ 0
-GND
-Wire Wire Line
-	4700 2900 4450 2900
-Connection ~ 4700 2900
 Wire Wire Line
 	6000 4700 7050 4700
 Text HLabel 7050 4250 2    50   Output ~ 0
@@ -144,7 +81,7 @@ Text HLabel 7050 4250 2    50   Output ~ 0
 Text HLabel 7050 4700 2    50   Output ~ 0
 -VDC
 Text HLabel 4450 4350 0    50   Input ~ 0
-Vee
+VEE
 Wire Wire Line
 	5100 4100 4600 4100
 $Comp
@@ -195,17 +132,6 @@ F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5100 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 5100 3500 50  0001 C CNN
 	2    5100 3500
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM2904 U5
-U 3 1 5DEBE28E
-P 5650 3500
-F 0 "U5" H 5608 3546 50  0000 L CNN
-F 1 "LM2904" H 5608 3455 50  0000 L CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5650 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 5650 3500 50  0001 C CNN
-	3    5650 3500
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4450 4550 4650 4550
@@ -374,4 +300,78 @@ Text Label 6650 4350 0    50   ~ 0
 AOUT
 Text Label 6650 4450 0    50   ~ 0
 AIN
+Wire Wire Line
+	4700 2900 4450 2900
+Wire Wire Line
+	5100 2900 4700 2900
+Connection ~ 4700 2900
+Wire Wire Line
+	4700 3000 4700 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5ED3C46F
+P 4700 3000
+AR Path="/5ED3C46F" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C46F" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4700 2750 50  0001 C CNN
+F 1 "GND" H 4705 2827 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 4450 2900 0    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	5800 4000 5800 4100
+$Comp
+L power:VDD #PWR?
+U 1 1 5ED3C490
+P 5550 3200
+AR Path="/5ED3C490" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C490" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 5550 3050 50  0001 C CNN
+F 1 "VDD" H 5450 3300 50  0000 C CNN
+F 2 "" H 5550 3200 50  0001 C CNN
+F 3 "" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2904 U5
+U 3 1 5DEBE28E
+P 5650 3500
+F 0 "U5" H 5608 3546 50  0000 L CNN
+F 1 "LM2904" H 5608 3455 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5650 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 5650 3500 50  0001 C CNN
+	3    5650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5ED3C484
+P 5550 3800
+AR Path="/5ED3C484" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C484" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5550 3650 50  0001 C CNN
+F 1 "VEE" H 5650 3900 50  0000 C CNN
+F 2 "" H 5550 3800 50  0001 C CNN
+F 3 "" H 5550 3800 50  0001 C CNN
+	1    5550 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5ED3C47C
+P 5800 4000
+AR Path="/5ED3C47C" Ref="#PWR?"  Part="1" 
+AR Path="/5ED35417/5ED3C47C" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5800 3850 50  0001 C CNN
+F 1 "VEE" H 5817 4173 50  0000 C CNN
+F 2 "" H 5800 4000 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -38,7 +38,7 @@ TD
 Text HLabel 4500 4050 0    50   Input ~ 0
 TX
 Text HLabel 6900 4450 2    50   Input ~ 0
-VEE
+V-
 Text HLabel 6900 3000 2    50   Input ~ 0
 RD
 Text HLabel 4500 3000 0    50   BiDi ~ 0
@@ -113,7 +113,7 @@ Wire Wire Line
 Text HLabel 6900 4550 2    50   Input ~ 0
 GND
 Text HLabel 6900 3750 2    50   Input ~ 0
-VDD
+VCC
 Wire Wire Line
 	6300 4450 6900 4450
 Wire Wire Line

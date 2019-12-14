@@ -180,9 +180,9 @@ F 3 "~" H 5550 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 3950 3200 1    50   Output ~ 0
-VEE
+-5V
 Text HLabel 5550 3050 1    50   Output ~ 0
-VDD
++5V
 Wire Wire Line
 	5550 3200 5550 3050
 Wire Wire Line

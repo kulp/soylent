@@ -28,10 +28,7 @@ F 3 "https://octopart.com/c3216x5r1e476m160ac-tdk-25947783?r=sp" H 4250 4100 50 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 3350 4250 3600
-Wire Wire Line
 	4250 3600 4350 3600
-Connection ~ 4250 3600
 Wire Wire Line
 	4250 3700 4250 3600
 Connection ~ 4250 3700
@@ -84,9 +81,6 @@ Wire Wire Line
 	7400 3900 7400 3950
 Wire Wire Line
 	7200 3900 7400 3900
-Connection ~ 7400 3900
-Wire Wire Line
-	7400 3350 7400 3900
 $Comp
 L Device:C C?
 U 1 1 5ECE4C95
@@ -137,18 +131,16 @@ Wire Wire Line
 	6800 3600 6400 3600
 Connection ~ 5800 4450
 Wire Wire Line
-	5800 4450 5800 4500
-Text HLabel 7400 3350 1    50   Output ~ 0
+	5800 4450 5800 4600
+Text HLabel 7650 3900 2    50   Output ~ 0
 -5V
-Text HLabel 5800 3350 1    50   Output ~ 0
+Text HLabel 7650 3600 2    50   Output ~ 0
 +5V
-Wire Wire Line
-	5800 3600 5800 3350
 Wire Wire Line
 	4750 4000 4750 4450
 Wire Wire Line
 	4750 4450 5800 4450
-Text HLabel 5800 4500 3    50   BiDi ~ 0
+Text HLabel 5800 4600 3    50   BiDi ~ 0
 GND
 Wire Wire Line
 	4750 4450 4250 4450
@@ -194,6 +186,15 @@ Wire Wire Line
 Wire Wire Line
 	5650 3600 5800 3600
 Connection ~ 5650 3600
-Text HLabel 4250 3350 1    50   Input ~ 0
+Text HLabel 4000 3600 0    50   Input ~ 0
 +VDC
+Wire Wire Line
+	4000 3600 4250 3600
+Connection ~ 4250 3600
+Wire Wire Line
+	7400 3900 7650 3900
+Connection ~ 7400 3900
+Wire Wire Line
+	6800 3600 7650 3600
+Connection ~ 6800 3600
 $EndSCHEMATC

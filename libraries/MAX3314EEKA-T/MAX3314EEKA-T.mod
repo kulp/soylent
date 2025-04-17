@@ -1,0 +1,102 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOT65P280X145-8N
+$EndINDEX
+$MODULE SOT65P280X145-8N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOT65P280X145-8N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.4744 -2.3064 0.64 0.64 0 0.05 N V 21 "SOT65P280X145-8N"
+T1 -0.068 2.2936 0.64 0.64 0 0.05 N V 21 "VAL**"
+DS -0.88 1.5 -0.88 -1.5 0.127 27
+DS -0.88 -1.5 0.88 -1.5 0.127 27
+DS 0.88 -1.5 0.88 1.5 0.127 27
+DS 0.88 1.5 -0.88 1.5 0.127 27
+DS -0.88 -1.54 0.88 -1.54 0.127 21
+DS -0.88 1.54 0.88 1.54 0.127 21
+DS -2.11 -1.47 -1.13 -1.47 0.05 26
+DS -1.13 -1.47 -1.13 -1.75 0.05 26
+DS -1.13 -1.75 1.13 -1.75 0.05 26
+DS 1.13 -1.75 1.13 -1.47 0.05 26
+DS 1.13 -1.47 2.11 -1.47 0.05 26
+DS 2.11 1.47 1.13 1.47 0.05 26
+DS 1.13 1.47 1.13 1.75 0.05 26
+DS 1.13 1.75 -1.13 1.75 0.05 26
+DS -1.13 1.75 -1.13 1.47 0.05 26
+DS -1.13 1.47 -2.11 1.47 0.05 26
+DS -2.11 -1.47 -2.11 1.47 0.05 26
+DS 2.11 1.47 2.11 -1.47 0.05 26
+DC -2.4 -1 -2.3 -1 0.2 21
+DC -2.4 -1 -2.3 -1 0.2 27
+$PAD
+Sh "1" R 1.21 0.48 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.255 -0.975
+$EndPAD
+$PAD
+Sh "2" R 1.21 0.48 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.255 -0.325
+$EndPAD
+$PAD
+Sh "3" R 1.21 0.48 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.255 0.325
+$EndPAD
+$PAD
+Sh "4" R 1.21 0.48 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.255 0.975
+$EndPAD
+$PAD
+Sh "5" R 1.21 0.48 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.255 0.975
+$EndPAD
+$PAD
+Sh "6" R 1.21 0.48 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.255 0.325
+$EndPAD
+$PAD
+Sh "7" R 1.21 0.48 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.255 -0.325
+$EndPAD
+$PAD
+Sh "8" R 1.21 0.48 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.255 -0.975
+$EndPAD
+$EndMODULE SOT65P280X145-8N
